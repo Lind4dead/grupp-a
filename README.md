@@ -2,6 +2,10 @@
 Se till att du är i master branch ->
 "git checkout master" i terminalen ->
 "git checkout -b <namn på ny branch>" ->
+Detta skapar en ny branch och flyttar dig till den branchen.
+Nu är du fri att koda så fingrarna glöder. 
+
+# OBS! SE TILL ATT DU ALDRIG ÄR I MASTER OCH KODAR OM DU INTE FÅTT OK ATT GÖRA DET
 
 
 
