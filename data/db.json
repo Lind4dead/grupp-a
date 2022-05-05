@@ -12,6 +12,45 @@
       "desc": "Gräddig, mycket söt smak med inslag av jordgubbar, vit choklad och vanilj. Serveras kyld som avec, eller med is",
       "pris/l": "355,71 kr/l",
       "type": "likör"
+    },
+    { 
+      "id": 2,
+      "title": "Baileys",
+      "subTitle": "Strawberries and Cream",
+      "price": 249,
+      "imgUrl": "https://sb-product-media-prod.azureedge.net/productimages/24447454/24447454_400.png",
+      "produced": "Irland",
+      "container": "Flaska 700 ml",
+      "alcPercentage": "17%",
+      "desc": "Gräddig, mycket söt smak med inslag av jordgubbar, vit choklad och vanilj. Serveras kyld som avec, eller med is",
+      "pris/l": "355,71 kr/l",
+      "type": "likör"
+    },
+    { 
+      "id": 3,
+      "title": "Baileys",
+      "subTitle": "Strawberries and Cream",
+      "price": 249,
+      "imgUrl": "https://sb-product-media-prod.azureedge.net/productimages/24447454/24447454_400.png",
+      "produced": "Irland",
+      "container": "Flaska 700 ml",
+      "alcPercentage": "17%",
+      "desc": "Gräddig, mycket söt smak med inslag av jordgubbar, vit choklad och vanilj. Serveras kyld som avec, eller med is",
+      "pris/l": "355,71 kr/l",
+      "type": "likör"
+    },
+    { 
+      "id": 4,
+      "title": "Baileys",
+      "subTitle": "Strawberries and Cream",
+      "price": 249,
+      "imgUrl": "https://sb-product-media-prod.azureedge.net/productimages/24447454/24447454_400.png",
+      "produced": "Irland",
+      "container": "Flaska 700 ml",
+      "alcPercentage": "17%",
+      "desc": "Gräddig, mycket söt smak med inslag av jordgubbar, vit choklad och vanilj. Serveras kyld som avec, eller med is",
+      "pris/l": "355,71 kr/l",
+      "type": "likör"
     }
   ]
 }
