@@ -1,0 +1,41 @@
+
+.dropdown-knapp {
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    color: #A1C181;
+}
+
+.navbar-meny {
+    display: flex;
+    align-items: center;
+    margin-left: 3rem;
+    margin-right: 1rem;
+}
+.navbar {
+    justify-content: left;
+}
+
+.navbar-meny .dropdown-knapp {
+    margin-right: 2rem;
+}
+.logga {
+    color: #232d4d;
+}
+.sökruta {
+    display: flex;
+    background-color: #a1c18133;
+    color: #A1C181;
+    border-radius: 3rem;
+    border: 1px solid #a1c1815a;
+    align-items: center;
+    padding-left: .8rem;
+    max-width: 80%;
+    margin: 0 auto;
+}
+.magnifying-glass {
+    color: #FCCA46;
+}
+.under-links li {
+    color: #619B8A;
+}
