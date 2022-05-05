@@ -1,0 +1,17 @@
+{
+  "products": [
+    { 
+      "id": 1,
+      "title": "Baileys",
+      "subTitle": "Strawberries and Cream",
+      "price": 249,
+      "imgUrl": "",
+      "produced": "Irland",
+      "container": "Flaska 700 ml",
+      "alcPercentage": "17%",
+      "desc": "Gräddig, mycket söt smak med inslag av jordgubbar, vit choklad och vanilj. Serveras kyld som avec, eller med is",
+      "pris/l": "355,71 kr/l",
+      "type": "likör"
+    }
+  ]
+}
