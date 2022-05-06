@@ -1,10 +1,12 @@
 import { useState } from 'react'
-import { useSelector } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
+import { filterByType, filterByCountry } from '../store/actions/productsAction'
 
 
 
-const Modal = () => {
+const Modal = ({ toggleModalFilter }) => {
 
+  const dispatch = useDispatch()
   const { data: products } = useSelector(state => state.products)
   const [filteredProducts, setFilteredProducts] = useState(products)
 
@@ -12,8 +14,11 @@ const Modal = () => {
 
   // },[])
 
-  const onFilter = (val) => {
-    console.log(filteredProducts)
+  const byType = (val) => {
+    dispatch(filterByType(val))
+  }
+  const byCountry = (val) => {
+    dispatch(filterByCountry(val))
   }
 
 
@@ -23,44 +28,44 @@ const Modal = () => {
         <div className="modal-content">
           <div className="modal-header">
             <h5 className='modal-title'>Filtrera</h5>
-            <button type="button" className="btn-close" aria-label="Close"></button>
+            <button type="button" className="btn-close" aria-label="Close" onClick={() => toggleModalFilter(false)}></button>
           </div>
           <div className="modal-body">
             <div>
               <h5>Spritdrycker</h5>
               <div className="form-check">
-                <input className="form-check-input" onChange={(e) => onFilter(e.target.value)} type="checkbox" value="likör" id="flexCheckDefault" />
+                <input className="form-check-input" onChange={e => e.target.checked ? byType(e.target.value) : byType()} type="checkbox" value="likör" id="flexCheckDefault" />
                 <label className="form-check-label" htmlFor="flexCheckDefault">Likör</label>
               </div>
               <div className="form-check">
-                <input className="form-check-input" type="checkbox" value="vodka" id="flexCheckDefault" />
+                <input className="form-check-input" onChange={e => e.target.checked ? byType(e.target.value) : byType()} type="checkbox" value="vodka" id="flexCheckDefault" />
                 <label className="form-check-label" htmlFor="flexCheckDefault">Vodka</label>
               </div>
               <div className="form-check">
-                <input className="form-check-input" type="checkbox" value="rom" id="flexCheckDefault" />
+                <input className="form-check-input" onChange={e => e.target.checked ? byType(e.target.value) : byType()} type="checkbox" value="rom" id="flexCheckDefault" />
                 <label className="form-check-label" htmlFor="flexCheckDefault">Rom</label>
               </div>
               <div className="form-check">
-                <input className="form-check-input" type="checkbox" value="whisky" id="flexCheckDefault" />
+                <input className="form-check-input" onChange={e => e.target.checked ? byType(e.target.value) : byType()} type="checkbox" value="whisky" id="flexCheckDefault" />
                 <label className="form-check-label" htmlFor="flexCheckDefault">Whisky</label>
               </div>
             </div>
             <div className='mt-3'>
               <h5>Ursprungsland</h5>
               <div className="form-check">
-                <input className="form-check-input" type="checkbox" value="irland" id="flexCheckDefault" />
+                <input className="form-check-input" onChange={e => e.target.checked ? byCountry(e.target.value) : byCountry()} type="checkbox" value="irland" id="flexCheckDefault" />
                 <label className="form-check-label" htmlFor="flexCheckDefault">Irland</label>
               </div>
               <div className="form-check">
-                <input className="form-check-input" type="checkbox" value="skottland" id="flexCheckDefault" />
+                <input className="form-check-input" onChange={e => e.target.checked ? byCountry(e.target.value) : byCountry()} type="checkbox" value="skottland" id="flexCheckDefault" />
                 <label className="form-check-label" htmlFor="flexCheckDefault">Skottland</label>
               </div>
               <div className="form-check">
-                <input className="form-check-input" type="checkbox" value="nicaragua" id="flexCheckDefault" />
+                <input className="form-check-input" onChange={e => e.target.checked ? byCountry(e.target.value) : byCountry()} type="checkbox" value="nicaragua" id="flexCheckDefault" />
                 <label className="form-check-label" htmlFor="flexCheckDefault">Nicaragua</label>
               </div>
               <div className="form-check">
-                <input className="form-check-input" type="checkbox" value="internationellt" id="flexCheckDefault" />
+                <input className="form-check-input" onChange={e => e.target.checked ? byCountry(e.target.value) : byCountry()} type="checkbox" value="internationellt" id="flexCheckDefault" />
                 <label className="form-check-label" htmlFor="flexCheckDefault">Internationellt</label>
               </div>
             </div>
