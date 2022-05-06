@@ -4,7 +4,8 @@ const actiontypes = () => {
       setProducts: 'SET_PRODUCTS',
       loadingProducts: 'LOADING_PRODUCTS',
       filterByType: 'FILTER_BY_TYPE',
-      filterByCountry: 'FILTER_BY_COUNTRY'
+      filterByCountry: 'FILTER_BY_COUNTRY',
+      setFilterOptions: 'FILTER_OPTIONS'
     },
     auth: {},
   }

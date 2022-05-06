@@ -1,21 +1,69 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { filterByType, filterByCountry } from '../store/actions/productsAction'
+import FilterCheckbox from './FilterCheckbox'
 
 
 
 const Modal = ({ toggleModalFilter }) => {
 
   const dispatch = useDispatch()
-  const { data: products } = useSelector(state => state.products)
-  const [filteredProducts, setFilteredProducts] = useState(products)
+  const { filterOptions, data: products } = useSelector(state => state.products)
+  const [filterTypes, setFilterTypes] = useState([])
+  const [filterCountries, setFilterCountries] = useState([])
+  // const [filteredProducts, setFilteredProducts] = useState({
+  //   types: [],
+  //   countries: []
+  // })
 
-  // useEffect(() => {
+  
 
-  // },[])
+  useEffect(() => {
+    dispatch(filterByType(filterTypes))
+    dispatch(filterByCountry(filterCountries))
+  }, [dispatch, filterTypes, filterCountries])
 
-  const byType = (val) => {
-    dispatch(filterByType(val))
+
+  const filterProducts = (boolean, val, filterOption) => {
+    if(filterOption === 'type') {
+    setFilterTypes(prev => {
+      
+
+        if(boolean){
+          const newValues = [...prev, val]
+          return newValues
+        }
+        else if(prev.length){
+          const newValues = prev.filter(type => type !== val)
+          return newValues
+        }
+        else {
+          return products
+        }
+        
+        
+      })
+    }
+    else {
+
+      setFilterCountries(prev => {
+        
+        if(boolean){
+          const newValues = [...prev, val]
+          return newValues
+        }
+        else if(prev.length){
+          const newValues = prev.filter(type => type !== val)
+          return newValues
+        }
+        else {
+          return products
+        }
+      
+        
+      })
+    }
+    
   }
   const byCountry = (val) => {
     dispatch(filterByCountry(val))
@@ -33,22 +81,10 @@ const Modal = ({ toggleModalFilter }) => {
           <div className="modal-body">
             <div>
               <h5>Spritdrycker</h5>
-              <div className="form-check">
-                <input className="form-check-input" onChange={e => e.target.checked ? byType(e.target.value) : byType()} type="checkbox" value="likör" id="flexCheckDefault" />
-                <label className="form-check-label" htmlFor="flexCheckDefault">Likör</label>
-              </div>
-              <div className="form-check">
-                <input className="form-check-input" onChange={e => e.target.checked ? byType(e.target.value) : byType()} type="checkbox" value="vodka" id="flexCheckDefault" />
-                <label className="form-check-label" htmlFor="flexCheckDefault">Vodka</label>
-              </div>
-              <div className="form-check">
-                <input className="form-check-input" onChange={e => e.target.checked ? byType(e.target.value) : byType()} type="checkbox" value="rom" id="flexCheckDefault" />
-                <label className="form-check-label" htmlFor="flexCheckDefault">Rom</label>
-              </div>
-              <div className="form-check">
-                <input className="form-check-input" onChange={e => e.target.checked ? byType(e.target.value) : byType()} type="checkbox" value="whisky" id="flexCheckDefault" />
-                <label className="form-check-label" htmlFor="flexCheckDefault">Whisky</label>
-              </div>
+              {
+                filterOptions.types.map(type => <FilterCheckbox type={type} key={type} filterProducts={filterProducts} />)
+              }
+              
             </div>
             <div className='mt-3'>
               <h5>Ursprungsland</h5>

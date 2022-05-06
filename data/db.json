@@ -49,8 +49,47 @@
       "container": "PET-flaska 700 ml",
       "alcPercentage": "37,5%",
       "desc": "Ren smak med inslag av vete och apelsinskal. Serveras kyld som snaps eller används som drinkingrediens.",
-      "pris/l": "290,00 kr/",
+      "pris/l": "290,00 kr/l",
       "type": "vodka"
+    },
+    { 
+      "id": 5,
+      "title": "Edradour",
+      "subTitle": "10 Years Old",
+      "price": 179,
+      "imgUrl": "https://product-cdn.systembolaget.se/productimages/24658209/24658209_400.png",
+      "produced": "Skottland",
+      "container": "Flaska 200 ml",
+      "alcPercentage": "40%",
+      "desc": "Maltig, nyanserad, kryddig smak med tydlig fatkaraktär, inslag av russin, choklad, vanilj, ljunghonung, torkade aprikoser, apelsin, ceder och halm. Serveras rumstempererad som avec.",
+      "pris/l": "895,00 kr/l",
+      "type": "whisky"
+    },
+    { 
+      "id": 6,
+      "title": "The Famous Grouse",
+      "subTitle": "",
+      "price": 279,
+      "imgUrl": "https://product-cdn.systembolaget.se/productimages/351/351_400.png",
+      "produced": "Skottland",
+      "container": "Flaska 350 ml",
+      "alcPercentage": "40%",
+      "desc": "Maltig smak med inslag av fat, örter, honung och vanilj. Ton av rök. Serveras rumstempererad som avec.",
+      "pris/l": "398,57 kr/l",
+      "type": "whisky"
+    },
+    { 
+      "id": 7,
+      "title": "Limoncello di Capri",
+      "subTitle": "",
+      "price": 209,
+      "imgUrl": "https://product-cdn.systembolaget.se/productimages/975128/975128_400.png",
+      "produced": "Italien",
+      "container": "Flaska 500 ml",
+      "alcPercentage": "30%",
+      "desc": "Söt, fruktig smak med tydlig karaktär av citron, inslag av citrusskal och örter. Serveras väl kyld, eller används som drinkingrediens.",
+      "pris/l": "418,00 kr/l",
+      "type": "likör"
     }
   ]
 }
