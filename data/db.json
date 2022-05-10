@@ -12,6 +12,84 @@
       "desc": "Gräddig, mycket söt smak med inslag av jordgubbar, vit choklad och vanilj. Serveras kyld som avec, eller med is",
       "pris/l": "355,71 kr/l",
       "type": "likör"
+    },
+    { 
+      "id": 2,
+      "title": "Flor de Caña",
+      "subTitle": "30 Years V Generaciones, 1988",
+      "price": 18999,
+      "imgUrl": "https://product-cdn.systembolaget.se/productimages/25245170/25245170_400.png",
+      "produced": "Nicaragua",
+      "container": "Flaska 700 ml",
+      "alcPercentage": "45%",
+      "desc": "Kryddig smak med fatkaraktär, inslag av torkade fikon, vaniljfudge, apelsin, muscovadosocker, nötter, arrak och kanel. Serveras rumstempererad som avec.",
+      "pris/l": "27141,43 kr/l",
+      "type": "rom"
+    },
+    { 
+      "id": 3,
+      "title": "Bowmore 1965",
+      "subTitle": "52 Years, 2019",
+      "price": 379000,
+      "imgUrl": "https://product-cdn.systembolaget.se/productimages/24604955/24604955_400.png",
+      "produced": "Skottland",
+      "container": "Flaska 700 ml",
+      "alcPercentage": "42%",
+      "desc": "Balanserad, tydligt rökig smak med fatkaraktär, inslag av ljunghonung, torkade aprikoser, jod, pomerans, vaniljfudge och tjära. Serveras rumstempererad.",
+      "pris/l": "541428,57 kr/l",
+      "type": "whisky"
+    },
+    { 
+      "id": 4,
+      "title": "Explorer Vodka",
+      "subTitle": "",
+      "price": 203,
+      "imgUrl": "https://product-cdn.systembolaget.se/productimages/1009703/1009703_400.png",
+      "produced": "Internationellt",
+      "container": "PET-flaska 700 ml",
+      "alcPercentage": "37,5%",
+      "desc": "Ren smak med inslag av vete och apelsinskal. Serveras kyld som snaps eller används som drinkingrediens.",
+      "pris/l": "290,00 kr/l",
+      "type": "vodka"
+    },
+    { 
+      "id": 5,
+      "title": "Edradour",
+      "subTitle": "10 Years Old",
+      "price": 179,
+      "imgUrl": "https://product-cdn.systembolaget.se/productimages/24658209/24658209_400.png",
+      "produced": "Skottland",
+      "container": "Flaska 200 ml",
+      "alcPercentage": "40%",
+      "desc": "Maltig, nyanserad, kryddig smak med tydlig fatkaraktär, inslag av russin, choklad, vanilj, ljunghonung, torkade aprikoser, apelsin, ceder och halm. Serveras rumstempererad som avec.",
+      "pris/l": "895,00 kr/l",
+      "type": "whisky"
+    },
+    { 
+      "id": 6,
+      "title": "The Famous Grouse",
+      "subTitle": "",
+      "price": 279,
+      "imgUrl": "https://product-cdn.systembolaget.se/productimages/351/351_400.png",
+      "produced": "Skottland",
+      "container": "Flaska 350 ml",
+      "alcPercentage": "40%",
+      "desc": "Maltig smak med inslag av fat, örter, honung och vanilj. Ton av rök. Serveras rumstempererad som avec.",
+      "pris/l": "398,57 kr/l",
+      "type": "whisky"
+    },
+    { 
+      "id": 7,
+      "title": "Limoncello di Capri",
+      "subTitle": "",
+      "price": 209,
+      "imgUrl": "https://product-cdn.systembolaget.se/productimages/975128/975128_400.png",
+      "produced": "Italien",
+      "container": "Flaska 500 ml",
+      "alcPercentage": "30%",
+      "desc": "Söt, fruktig smak med tydlig karaktär av citron, inslag av citrusskal och örter. Serveras väl kyld, eller används som drinkingrediens.",
+      "pris/l": "418,00 kr/l",
+      "type": "likör"
     }
   ]
 }
