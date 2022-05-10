@@ -1,69 +1,17 @@
 import { useEffect, useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { filterByType, filterByCountry, filterProducts } from '../store/actions/productsAction'
-// import FilterCheckbox from './FilterCheckbox'
+
 
 
 
 const Modal = ({ toggleModalFilter }) => {
 
   const dispatch = useDispatch()
-  const { filterOptions, data: products } = useSelector(state => state.products)
-  // const [filterTypes, setFilterTypes] = useState([])
-  // const [filterCountries, setFilterCountries] = useState([])
+  const { data: products } = useSelector(state => state.products)
+
+
   
 
-
-  // useEffect(() => {
-  //   dispatch(filterByType(filterTypes))
-  //   dispatch(filterByCountry(filterCountries))
-  // }, [dispatch, filterTypes, filterCountries])
-
-
-  // const filterProducts = (boolean, val, filterOption) => {
-  //   if(filterOption === 'type') {
-  //   setFilterTypes(prev => {
-
-
-  //       if(boolean){
-  //         const newValues = [...prev, val]
-  //         return newValues
-  //       }
-  //       else if(prev.length){
-  //         const newValues = prev.filter(type => type !== val)
-  //         return newValues
-  //       }
-  //       else {
-  //         return products
-  //       }
-
-
-  //     })
-  //   }
-  //   else {
-
-  //     setFilterCountries(prev => {
-
-  //       if(boolean){
-  //         const newValues = [...prev, val]
-  //         return newValues
-  //       }
-  //       else if(prev.length){
-  //         const newValues = prev.filter(type => type !== val)
-  //         return newValues
-  //       }
-  //       else {
-  //         return products
-  //       }
-
-
-  //     })
-  //   }
-
-  // }
-  // const byCountry = (val) => {
-  //   dispatch(filterByCountry(val))
-  // }
 
 
   return (
@@ -79,7 +27,7 @@ const Modal = ({ toggleModalFilter }) => {
               <h5>Spritdrycker</h5>
               {
                 filterOptions.types.map(type => <div key={type} className="form-check">
-                  <input className="form-check-input" onChange={(e) => dispatch(filterProducts(e.target.value, e.target.name))} name="type" type="checkbox" value={type} id="type" />
+                  <input className="form-check-input" name="type" type="checkbox" value={type} id="type" />
                   <label className="form-check-label" htmlFor="type">{type}</label>
                 </div>)
               }
