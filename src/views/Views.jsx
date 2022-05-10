@@ -2,6 +2,7 @@ import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import HomeView from './HomeView'
 import LoginView from './LoginView'
+import ProductDetails from './ProductDetails'
 import ProductsGridView from './ProductsGridView'
 import TequilaView from './Spritsorter/TequilaView'
 import VodkaView from './Spritsorter/VodkaView'
@@ -21,6 +22,8 @@ const Views = () => {
         <Route path='/whisky' element={<WhiskyView />} />
         <Route path='/liquor' element={<LiquorView />} />
         <Route path='/rom' element={<RomView />} />
+        <Route path='/details/:id' element={<ProductDetails />} />
+
       </Routes>
     )
 } 
