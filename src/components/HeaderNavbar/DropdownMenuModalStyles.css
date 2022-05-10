@@ -1,0 +1,78 @@
+.Modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1055;
+    background-color: #00000028 ;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: 0;
+    font-size: medium;
+    color: #233d4d;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .Modal .modal-dialog {
+    position: relative;
+    width: 35%;
+    height: 100vh;
+    margin: 0 !important;
+    pointer-events: none;
+  }
+  
+  .Modal .modal-content {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px transparent;
+    border-radius: 0;
+    outline: 0;
+  }
+
+  .Modal .modal-body {
+      display: block;
+      align-items: flex-start;
+      justify-content: start;
+      padding: 0;
+  }
+
+  .Modal li {
+      text-decoration: none;
+      list-style: none;
+      display: block;
+      align-items: flex-start;
+      justify-content: start;
+  }
+
+  .modal-header {
+      border-bottom: none;
+  }
+
+  .meny-h5 {
+      font-weight: bold;
+      margin-left: .8rem;
+  }
+  
+  .länklista {
+      color: #356154;
+      width: 100%;
+      padding-left: 0;
+      padding-block: 1rem;
+  }
+  .menylänk {
+      padding-left: 1.8rem;
+      padding-block: .4rem;
+      width: 100%;
+      cursor: pointer;
+  }
+  .menylänk:hover {
+      background-color: #a1c18118;
+      transition: 200ms ease;
+      
+  }

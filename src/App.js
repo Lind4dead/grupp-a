@@ -7,6 +7,11 @@ import ProductsGridView from './views/ProductsGridView';
 
 
 
+// import Views from './views/Views';
+import Header from './components//HeaderNavbar/Header';
+import Navbar from './components//HeaderNavbar/Navbar';
+
+
 function App() {
 
   const dispatch = useDispatch()
@@ -19,9 +24,17 @@ function App() {
   
   return (
     <div className="App">
+
       <Routes>
         <Route path='/' element={ <ProductsGridView /> } />
       </Routes>
+
+
+      <Header />
+      <Navbar />
+      <div className="container">
+        Allt annat ska in här
+      </div>
 
     </div>
   );
