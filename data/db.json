@@ -10,7 +10,7 @@
       "container": "Flaska 700 ml",
       "alcPercentage": "17%",
       "desc": "Gräddig, mycket söt smak med inslag av jordgubbar, vit choklad och vanilj. Serveras kyld som avec, eller med is",
-      "pris/l": "355,71 kr/l",
+      "prisL": "355,71 kr/l",
       "type": "likör"
     },
     { 
@@ -23,7 +23,7 @@
       "container": "Flaska 700 ml",
       "alcPercentage": "45%",
       "desc": "Kryddig smak med fatkaraktär, inslag av torkade fikon, vaniljfudge, apelsin, muscovadosocker, nötter, arrak och kanel. Serveras rumstempererad som avec.",
-      "pris/l": "27141,43 kr/l",
+      "prisL": "27141,43 kr/l",
       "type": "rom"
     },
     { 
@@ -36,7 +36,7 @@
       "container": "Flaska 700 ml",
       "alcPercentage": "42%",
       "desc": "Balanserad, tydligt rökig smak med fatkaraktär, inslag av ljunghonung, torkade aprikoser, jod, pomerans, vaniljfudge och tjära. Serveras rumstempererad.",
-      "pris/l": "541428,57 kr/l",
+      "prisL": "541428,57 kr/l",
       "type": "whisky"
     },
     { 
@@ -49,7 +49,7 @@
       "container": "PET-flaska 700 ml",
       "alcPercentage": "37,5%",
       "desc": "Ren smak med inslag av vete och apelsinskal. Serveras kyld som snaps eller används som drinkingrediens.",
-      "pris/l": "290,00 kr/l",
+      "prisL": "290,00 kr/l",
       "type": "vodka"
     },
     { 
@@ -62,7 +62,7 @@
       "container": "Flaska 200 ml",
       "alcPercentage": "40%",
       "desc": "Maltig, nyanserad, kryddig smak med tydlig fatkaraktär, inslag av russin, choklad, vanilj, ljunghonung, torkade aprikoser, apelsin, ceder och halm. Serveras rumstempererad som avec.",
-      "pris/l": "895,00 kr/l",
+      "prisL": "895,00 kr/l",
       "type": "whisky"
     },
     { 
@@ -75,7 +75,7 @@
       "container": "Flaska 350 ml",
       "alcPercentage": "40%",
       "desc": "Maltig smak med inslag av fat, örter, honung och vanilj. Ton av rök. Serveras rumstempererad som avec.",
-      "pris/l": "398,57 kr/l",
+      "prisL": "398,57 kr/l",
       "type": "whisky"
     },
     { 
@@ -88,7 +88,7 @@
       "container": "Flaska 500 ml",
       "alcPercentage": "30%",
       "desc": "Söt, fruktig smak med tydlig karaktär av citron, inslag av citrusskal och örter. Serveras väl kyld, eller används som drinkingrediens.",
-      "pris/l": "418,00 kr/l",
+      "prisL": "418,00 kr/l",
       "type": "likör"
     }
   ]
