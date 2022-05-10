@@ -38,45 +38,58 @@ export const productsFilterOptions = (products) => {
   }
 }
 
-export const filterByType = (payload) => {
-  return async dispatch => {
-    dispatch(loadingProducts(true))
-    try {
-      const res = await axios.get('http://localhost:8080/products')
-      if (payload.length) {
-        const _payload = []
-        for (let i = 0; i < payload.length; i++) {
-          const data = res.data.filter(product => product.type.toUpperCase() === payload[i].toUpperCase())
-          _payload.push(...data)
-        }
-        dispatch(setByType(_payload))
-      }
-      else {
-        dispatch(setByType(res.data))
-      }
-    } catch (err) {
-
-    }
+export const filterProducts = (val, type) => {
+  console.log(val)
+  console.log(type)
+  const filters = {
+    val: val,
+    type: type
+  }
+  return {
+    type: actiontypes().products.filterProducts,
+    payload: filters
   }
 }
 
-export const filterByCountry = (val) => {
-  return async dispatch => {
-    dispatch(loadingProducts(true))
-    try {
-      const res = await axios.get('http://localhost:8080/products')
-      if (val) {
-        const data = res.data.filter(product => product.produced.toUpperCase() === val.toUpperCase())
-        dispatch(setByCountry(data))
-      }
-      else {
-        dispatch(setByCountry(res.data))
-      }
-    } catch (err) {
+// export const filterByType = (payload) => {
+//   return async dispatch => {
+//     dispatch(loadingProducts(true))
+//     try {
+//       const res = await axios.get('http://localhost:8080/products')
+//       if (payload.length) {
+//         const _payload = []
+//         for (let i = 0; i < payload.length; i++) {
+//           const data = res.data.filter(product => product.type.toUpperCase() === payload[i].toUpperCase())
+//           _payload.push(...data)
+//         }
+//         dispatch(setByType(_payload))
+//       }
+//       else {
+//         dispatch(setByType(res.data))
+//       }
+//     } catch (err) {
 
-    }
-  }
-}
+//     }
+//   }
+// }
+
+// export const filterByCountry = (val) => {
+//   return async dispatch => {
+//     dispatch(loadingProducts(true))
+//     try {
+//       const res = await axios.get('http://localhost:8080/products')
+//       if (val) {
+//         const data = res.data.filter(product => product.produced.toUpperCase() === val.toUpperCase())
+//         dispatch(setByCountry(data))
+//       }
+//       else {
+//         dispatch(setByCountry(res.data))
+//       }
+//     } catch (err) {
+
+//     }
+//   }
+// }
 
 const setProducts = (products) => {
   return {

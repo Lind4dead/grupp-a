@@ -24,29 +24,6 @@ const productsReducer = (state = initState, action) => {
         loading: action.payload
       }
 
-    case actiontypes().products.filterByType:
-      return {
-        ...state,
-        filteredData: action.payload,
-        loading: false,
-        error: null
-      }
-    
-    case actiontypes().products.filterByCountry:
-      return {
-        ...state,
-        filteredData: action.payload,
-        loading: false,
-        error: null
-      }
-
-    case actiontypes().products.setFilterOptions:
-      return {
-        ...state,
-        filterOptions: action.payload,
-        loading: false,
-        error: null
-      }
 
     default:
       return state
