@@ -4,6 +4,18 @@ import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { getProducts } from './store/actions/productsAction';
 import './App.css';
+
+import ProductDetails from './views/ProductDetails';
+
+function App() {
+
+
+  return (
+    <div className="App">
+      
+      <ProductDetails /> 
+  
+
 import { Route, Routes } from 'react-router-dom'
 import ProductsGridView from './views/ProductsGridView';
 
@@ -41,6 +53,7 @@ function App() {
       </div>
       {/* footer */}
       <Footer />
+
 
     </div>
   );
