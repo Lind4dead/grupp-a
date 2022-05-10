@@ -1,3 +1,5 @@
+
+import Footer from "./components/Footer";
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { getProducts } from './store/actions/productsAction';
@@ -10,6 +12,7 @@ import ProductsGridView from './views/ProductsGridView';
 // import Views from './views/Views';
 import Header from './components//HeaderNavbar/Header';
 import Navbar from './components//HeaderNavbar/Navbar';
+
 
 
 function App() {
@@ -25,6 +28,7 @@ function App() {
   return (
     <div className="App">
 
+
       <Routes>
         <Route path='/' element={ <ProductsGridView /> } />
       </Routes>
@@ -35,6 +39,8 @@ function App() {
       <div className="container">
         Allt annat ska in här
       </div>
+      {/* footer */}
+      <Footer />
 
     </div>
   );
