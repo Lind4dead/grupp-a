@@ -30,7 +30,7 @@
     border: 1px solid #a1c1815a;
     align-items: center;
     padding-left: .8rem;
-    max-width: 80%;
+    max-width: 75%;
     margin: 0 auto;
 }
 .magnifying-glass {
@@ -44,6 +44,10 @@
 .bg-egencolor {
     background-color: #FE7F2D;
     font-size: 11px;
+}
+
+.shoppingcart-icon {
+    margin-right: 1rem;
 }
 
 .under-links li {

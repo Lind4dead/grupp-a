@@ -1,10 +1,11 @@
-.Modal {
+.Modal1 {
     position: fixed;
     top: 0;
     right: 0;
     z-index: 1055;
     background-color: #00000028 ;
     width: 100%;
+    min-width: fit-content;
     height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
@@ -14,7 +15,7 @@
     font-family: Arial, Helvetica, sans-serif;
   }
   
-  .Modal .modal-dialog {
+  .Modal1 .modal-dialog {
     position: relative;
     width: 35%;
     height: 100vh;
@@ -22,7 +23,7 @@
     pointer-events: none;
   }
   
-  .Modal .modal-content {
+  .Modal1 .modal-content {
     position: relative;
     display: flex;
     width: 100%;
@@ -35,14 +36,14 @@
     outline: 0;
   }
 
-  .Modal .modal-body {
+  .Modal1 .modal-body {
       display: block;
       align-items: flex-start;
       justify-content: start;
       padding: 0;
   }
 
-  .Modal li {
+  .Modal1 li {
       text-decoration: none;
       list-style: none;
       display: block;
@@ -50,7 +51,7 @@
       justify-content: start;
   }
 
-  .modal-header {
+  .Modal1 .modal-header {
       border-bottom: none;
   }
 
@@ -66,10 +67,11 @@
       padding-block: 1rem;
   }
   .menylänk {
-      padding-left: 1.8rem;
+      padding-left: 1.3rem;
       padding-block: .4rem;
       width: 100%;
       cursor: pointer;
+      color: #233d4d;
   }
   .menylänk:hover {
       background-color: #a1c18118;

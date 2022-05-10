@@ -14,7 +14,7 @@ const Header = () => {
         </div>
         <div className='header-div2 pt-3'>
             <ul className='d-flex'>
-                <li className='nav-link'><NavLink to='/login'>Logga in</NavLink></li>
+            <NavLink to='/login'><li className='nav-link'>Logga in</li></NavLink>
                 <li className='nav-link'>Kundservice</li>
             </ul>
         </div>

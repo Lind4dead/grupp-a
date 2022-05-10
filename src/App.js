@@ -30,13 +30,8 @@ function App() {
       <Navbar />
 
         <Views />
-
-
-      <ProductDetails /> 
-      <div className="container">
-        Allt annat ska in här
-      </div>
-      {/* footer */}
+ 
+     
       <Footer />
 
 
