@@ -1,9 +1,12 @@
-const actionstypes = () => {
+const actiontypes = () => {
   return {
-    products: {},
+    products: {
+      setProducts: 'SET_PRODUCTS',
+      loadingProducts: 'LOADING_PRODUCTS'
+    },
     auth: {},
   }
 }
 
 
-export default actionstypes;
+export default actiontypes;
