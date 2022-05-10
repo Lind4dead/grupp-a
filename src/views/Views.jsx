@@ -1,11 +1,13 @@
 import React from 'react'
-import { Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import LoginView from './LoginView'
+import ProductsGridView from './ProductsGridView'
 
 const Views = () => {
     return (
       <Routes>
-         <LoginView />
+        <Route path='/login' element={<LoginView />} />
+        <Route path='/' element={ <ProductsGridView /> } />
       </Routes>
     )
 } 

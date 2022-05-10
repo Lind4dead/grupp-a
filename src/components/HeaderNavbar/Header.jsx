@@ -1,5 +1,6 @@
 import './HeaderStyles.css'
 import React from 'react'
+import { Link, NavLink } from 'react-router-dom'
 
 const Header = () => {
   return (
@@ -13,7 +14,7 @@ const Header = () => {
         </div>
         <div className='header-div2 pt-3'>
             <ul className='d-flex'>
-                <li className='nav-link'>Logga in</li>
+                <li className='nav-link'><NavLink to='/login'>Logga in</NavLink></li>
                 <li className='nav-link'>Kundservice</li>
             </ul>
         </div>
