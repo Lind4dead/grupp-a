@@ -36,6 +36,20 @@
 .magnifying-glass {
     color: #FCCA46;
 }
+
+.fa-shopping-cart {
+    color: #232d4de1;
+    font-size: larger;
+}
+.bg-egencolor {
+    background-color: #FE7F2D;
+    font-size: 11px;
+}
+
 .under-links li {
     color: #619B8A;
+    cursor: pointer;
+}
+.under-links li:hover {
+    color: #FE7F2D;
 }
