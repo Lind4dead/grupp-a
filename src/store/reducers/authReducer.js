@@ -30,6 +30,11 @@ const authReducer = (state = initState, action) => {
                 token: action.payload
             }
 
+        case actiontypes().auth.logout:
+            return {
+                ...initState
+            }
+
         default:
             return state
     }
