@@ -2,6 +2,7 @@ import './NavbarStyles.css'
 import {useState} from 'react'
 import DropdownMenuModal from './DropdownMenuModal'
 import { Link, NavLink } from 'react-router-dom'
+import ShoppingCart from '../ShoppingCart/ShoppingCart'
 
 
 const Navbar = () => {
@@ -40,7 +41,7 @@ const Navbar = () => {
                 className="dropdown-menu dropdown-menu-end shopping-cart"
                 aria-labelledby="navbarDropdownMenuLink"
                 >
-                    ShoppingCart
+                    <ShoppingCart />
                 </ul>
             </div>
         

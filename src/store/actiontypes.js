@@ -9,6 +9,12 @@ const actiontypes = () => {
       getProductByIdSuccess: 'GET_PRODUCT_SUCCESS',
       getProductByIdFailure: 'GET_PRODUCT_FAILURE'
     },
+    shoppingCart: {
+      increment: 'INCREMENT',
+      decrement: 'DECREMENT',
+      removeOne: 'REMOVE_ONE',
+      clearCart: 'CLEAR_CART'
+    },
     auth: {},
   }
 }

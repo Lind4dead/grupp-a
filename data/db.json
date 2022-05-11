@@ -11,7 +11,7 @@
       "alcPercentage": "17%",
       "desc": "Gräddig, mycket söt smak med inslag av jordgubbar, vit choklad och vanilj. Serveras kyld som avec, eller med is",
       "prisL": "355,71 kr/l",
-      "type": "likör"
+      "type": "liquor"
     },
     { 
       "id": 2,
@@ -89,7 +89,7 @@
       "alcPercentage": "30%",
       "desc": "Söt, fruktig smak med tydlig karaktär av citron, inslag av citrusskal och örter. Serveras väl kyld, eller används som drinkingrediens.",
       "prisL": "418,00 kr/l",
-      "type": "likör"
+      "type": "liquor"
     }
   ]
 }
