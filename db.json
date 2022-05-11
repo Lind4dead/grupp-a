@@ -100,6 +100,30 @@
       "lastName": "Hej",
       "repeatPassword": "Hejsan",
       "id": 1
+    },
+    {
+      "email": "login@login.se",
+      "password": "$2a$10$RlfOo3kFy5PEJNovFDB3l.2iyyHuQA1.vmlme1GerUVQ0KbpmXzNK",
+      "firstName": "Login",
+      "lastName": "Login",
+      "repeatPassword": "Login",
+      "id": 2
+    },
+    {
+      "email": "login2@login.se",
+      "password": "$2a$10$sCeJvxKUSxtsQJaB/1J0f.MLXV0pjOyXq.94Sm./8xj8p5TnvFCU6",
+      "firstName": "Login",
+      "lastName": "Login",
+      "repeatPassword": "Login",
+      "id": 3
+    },
+    {
+      "email": "try@try.se",
+      "password": "$2a$10$8KFj35RBAzID1XtFxN31i.4FPdpiBNLLK.WeeUEO5Iqg1.xD7stfu",
+      "firstName": "try",
+      "lastName": "try",
+      "repeatPassword": "try123",
+      "id": 4
     }
   ]
 }

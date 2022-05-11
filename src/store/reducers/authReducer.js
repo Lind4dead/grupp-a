@@ -22,6 +22,14 @@ const authReducer = (state = initState, action) => {
                 error: action.payload
             }
 
+        case actiontypes().auth.authSuccess:
+            return{
+                ...state,
+                loading: false,
+                error: null,
+                token: action.payload
+            }
+
         default:
             return state
     }

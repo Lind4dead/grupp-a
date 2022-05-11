@@ -11,7 +11,8 @@ const actiontypes = () => {
     },
     auth: {
       loading: 'LOADING_USER',
-      authFailure: 'AUTH_FAILURE'
+      authFailure: 'AUTH_FAILURE',
+      authSuccess: 'AUTH_SUCCESS'
     }
   }
 }
