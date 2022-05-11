@@ -27,6 +27,7 @@ const RegisterForm = ({setLogin}) => {
     e.preventDefault()
     dispatch(registerUser(formData))
   }
+  
   return (
     <div className='container card py-5 rounded-7 shadow p-3 mb-5 bg-body rounded'>
       <h2  className='text-center mb-4'>Bli medlem</h2>

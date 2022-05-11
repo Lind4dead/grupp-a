@@ -9,6 +9,8 @@ const callApi = (url, user, dispatch) => {
     .catch(err => dispatch(authFailure(err.message))) 
 }
 
+
+
 export const registerUser = (user) => {
     return dispatch => {
         dispatch(loading())
@@ -20,6 +22,13 @@ export const loginUser = user => {
     return dispatch => {
         dispatch(loading())
         callApi('http://localhost:8080/login', user, dispatch)
+        
+    }
+}
+
+export const logoutUser = () => {
+    return {
+        type: actiontypes().auth.logout
         
     }
 }
