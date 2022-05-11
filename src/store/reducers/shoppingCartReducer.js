@@ -10,26 +10,6 @@ const shoppingCartReducer = (state = initState, action) => {
 
   switch(action.type) {
 
-    case actiontypes().shoppingCart.increment: {
-      return {
-       
-      }
-    }
-    case actiontypes().shoppingCart.decrement: {
-      return {
-
-      }
-    }
-    case actiontypes().shoppingCart.removeOne: {
-      return {
-
-      }
-    }
-    case actiontypes().shoppingCart.clearCart: {
-      return {
-
-      }
-    }
 
     default: 
       return state
