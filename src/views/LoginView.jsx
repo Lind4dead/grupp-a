@@ -4,7 +4,7 @@ import RegisterForm from '../components/RegisterForm'
 
 const LoginView = () => {
 
-  const [login, setLogin] = useState(true)
+  const [login, setLogin] = useState(false)
    
   return (
     <div className='login-view'>

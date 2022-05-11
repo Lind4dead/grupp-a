@@ -4,8 +4,7 @@ import {useState} from 'react'
 const LoginForm = ({setLogin}) => {
   const [formData, setFormData] = useState({
     email: '',
-    password: '',
-   
+    password: ''
   })
 
   const onChange = e => {
