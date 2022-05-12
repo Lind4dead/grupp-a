@@ -15,7 +15,13 @@ const actiontypes = () => {
       removeOne: 'REMOVE_ONE',
       clearCart: 'CLEAR_CART'
     },
-    auth: {},
+    auth: {
+      loading: 'LOADING_USER',
+      authFailure: 'AUTH_FAILURE',
+      authSuccess: 'AUTH_SUCCESS',
+      logout: 'LOGOUT_USER'
+    }
+
   }
 }
 

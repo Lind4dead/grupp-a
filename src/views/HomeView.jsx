@@ -1,9 +1,12 @@
 import React from 'react'
-import TequilaView from './Spritsorter/TequilaView'
+import BubbleMenu from '../components/DiscoverByCategory.jsx/BubbleMenu'
+
 
 const HomeView = () => {
   return (
-    <div className='container'><TequilaView /></div>
+    <div>
+      <BubbleMenu />
+    </div>
   )
 }
 

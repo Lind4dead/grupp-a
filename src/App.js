@@ -11,6 +11,7 @@ import ProductsGridView from './views/ProductsGridView';
 import Views from './views/Views';
 import Header from './components//HeaderNavbar/Header';
 import Navbar from './components//HeaderNavbar/Navbar';
+import { checkUserExists } from "./store/actions/authActions";
 
 
 
@@ -20,7 +21,7 @@ function App() {
 
   useEffect(() => {
     dispatch(getProducts())
-
+    dispatch(checkUserExists())
   }, [dispatch])
 
   

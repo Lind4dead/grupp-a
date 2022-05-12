@@ -11,7 +11,7 @@ const Navbar = () => {
 
 
   return (
-    <nav className='navbar pt-4 mb-5'>
+    <nav className='navbar pt-4'>
         <div className="dropdown navbar-meny">
             <button onClick={() => setShowMenu(true)} className='dropdown-knapp' type="button" data-mdb-toggle="modal" data-mdb-target="#exampleModal">
                 <i className="fa-solid fa-bars"></i>
@@ -23,7 +23,7 @@ const Navbar = () => {
             <NavLink to='/'><h1 className='logga'><i className="fa-solid fa-martini-glass"></i> ROMIO</h1></NavLink>
         </div>
         <div className="form-outline sökruta col-12 col-sm-6 col-md-7 col-lg-8">
-            <div className='magnifying-glass'><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div className='magnifying-glass'><i className="fa-solid fa-magnifying-glass"></i></div>
             <input type="search" id="form1" className="form-control" placeholder="Type query" aria-label="Search"/>
         </div>
         <div className="dropdown shoppingcart-icon">

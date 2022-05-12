@@ -1,4 +1,4 @@
-import React from 'react'
+import { useState } from 'react'
 import ProductCard from '../../components/ProductCard'
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom'
@@ -6,16 +6,19 @@ import { Link } from 'react-router-dom'
 const TequilaView = () => {
 
     const { data: products, loading } = useSelector(state => state.products)
+    const [tequila, setTequila] = useState(products.filter(product => (
+      product.type === 'tequila'
+    )))
 
   return (
     <div className='container'>
       {/* <FilterProducts /> */}
-      <Link to='/allproducts'><div className='TillAllaProdukter'><i className="fa-solid fa-left-long me-2 fs-9"></i>Till alla produkter</div></Link>
+      <Link to='/allproducts'><div className='TillAllaProdukter mt-3'><i className="fa-solid fa-left-long me-2 fs-9"></i>Till alla produkter</div></Link>
       <h3 className='sprit-titel'>Tequila</h3>
         <div className="row">
           { loading && <p>Loading...</p>}
           {
-            products.map(product => <div key={product.id} className='col-6 col-md-4 col-xl-3'><ProductCard  product={product} /></div>)
+            tequila.map(product => <div key={product._id} className='col-6 col-md-4 col-xl-3'><ProductCard  product={product} /></div>)
           }
         </div>
       </div>
