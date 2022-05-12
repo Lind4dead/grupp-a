@@ -1,5 +1,6 @@
 import axios from 'axios'
 import actiontypes from '../actiontypes'
+import jwt_decode from 'jwt-decode'
 
 const callApi = (url, user, dispatch) => {
     axios.post(url, user)
@@ -33,6 +34,20 @@ export const logoutUser = () => {
     }
 }
 
+export const checkUserExists = () => {
+    return dispatch => {
+        let token = localStorage.getItem('token')
+        if(token) {
+            if(jwt_decode(token).exp * 1000 > Date.now()){
+                dispatch(authSuccess(token))
+            } else {
+                localStorage.removeItem('token')
+            }
+
+        }
+    }
+    
+}
 const loading = () => {
     return {
         type: actiontypes().auth.loading

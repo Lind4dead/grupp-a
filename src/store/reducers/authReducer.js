@@ -23,6 +23,7 @@ const authReducer = (state = initState, action) => {
             }
 
         case actiontypes().auth.authSuccess:
+            localStorage.setItem('token', action.payload)
             return{
                 ...state,
                 loading: false,
@@ -31,6 +32,7 @@ const authReducer = (state = initState, action) => {
             }
 
         case actiontypes().auth.logout:
+            localStorage.removeItem('token')
             return {
                 ...initState
             }

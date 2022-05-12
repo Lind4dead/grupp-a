@@ -5,7 +5,6 @@ import { registerUser } from '../store/actions/authActions'
 const RegisterForm = ({setLogin}) => {
 
   const dispatch = useDispatch()
-
   const loading = useSelector(state => state.auth.loading)
   
   const [formData, setFormData] = useState({
@@ -50,7 +49,7 @@ const RegisterForm = ({setLogin}) => {
           </div>
        
           <div>
-            <button className='mb-4 btn btn-block btn-primary gradient-custom-signUp text-body'>{loading ? 'Loading...' : 'Registrera'}</button>
+            <button className='mb-4 btn btn-block text-light gradient-custom-signUp'>{loading ? 'Loading...' : 'Registrera'}</button>
           </div>
           <p className='text-center'>Redan medlem? <span className='login-link' onClick={() => setLogin(true)} >logga in här</span></p>
           </div>
