@@ -10,6 +10,8 @@ router.post('/login', userModel.loginUser)
 
 router.patch('/:id', auth.verifyToken, userModel.updateUser)
 
+router.get('/', userModel.getAllUsers)
+
 
 
 

@@ -177,3 +177,19 @@ exports.updateUser = (req, res) => {
   })
 })
 }
+
+
+exports.getAllUsers = (req, res) => {
+  User.find({}, (err, result) => {
+    if(err) {
+      return res.status(500).json({
+        statusCode: 500,
+        status: false,
+        message: 'Something went wrong when fetching the users',
+        err
+      })
+    }
+
+    res.status(200).json(result)
+  })
+}
