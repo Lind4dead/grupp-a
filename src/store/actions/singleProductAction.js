@@ -8,7 +8,7 @@ export const getProductById = (id) => {
     })
 
     try {
-      const res = await axios.get('http://localhost:8080/products/' + id)
+      const res = await axios.get('http://localhost:9999/api/products/' + id)
       dispatch(getProductByIdSuccess(res.data))
     } catch (err) {
       
