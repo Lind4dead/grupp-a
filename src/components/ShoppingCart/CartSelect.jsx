@@ -12,7 +12,7 @@ const CartSelect = () => {
 
   return (
     <div className='Cart-select'>
-      <select onChange={handleChange} defaultValue={selected} className="form-select">
+      <select onChange={handleChange} defaultValue={selected} className="form-select mb-2">
         <option></option>
         <option value="1">1</option>
         <option value="2">2</option>
