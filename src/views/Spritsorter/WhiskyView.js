@@ -1,4 +1,4 @@
-import React from 'react'
+import { useState } from 'react'
 import ProductCard from '../../components/ProductCard'
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom'
@@ -6,6 +6,9 @@ import { Link } from 'react-router-dom'
 const WhiskyView = () => {
 
     const { data: products, loading } = useSelector(state => state.products)
+    const [whisky, setWhisky] = useState(products.filter(product => (
+      product.type === 'whisky'
+    )))
 
   return (
     <div className='container'>
@@ -15,7 +18,7 @@ const WhiskyView = () => {
         <div className="row">
           { loading && <p>Loading...</p>}
           {
-            products.map(product => <div key={product.id} className='col-6 col-md-4 col-xl-3'><ProductCard  product={product} /></div>)
+            whisky.map(product => <div key={product.id} className='col-6 col-md-4 col-xl-3'><ProductCard  product={product} /></div>)
           }
         </div>
       </div>

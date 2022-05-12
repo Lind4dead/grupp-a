@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const ProductCard = ({ product }) => {
   return (
-    <Link className='product' to={`/details/${product.id}`}>
+    <Link className='product' to={`/details/${product._id}`}>
     <div className='product-card card'>
       <div className="bg-image hover-overlay ripple d-flex justify-content-center" data-mdb-ripple-color="light">
         <img src={product.imgUrl} className="card-img-top" alt='1' />

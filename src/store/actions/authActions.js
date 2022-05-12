@@ -5,7 +5,7 @@ import jwt_decode from 'jwt-decode'
 const callApi = (url, user, dispatch) => {
     axios.post(url, user)
     .then(res => {
-        dispatch(authSuccess(res.data.accessToken))
+        dispatch(authSuccess(res.data.token))
     })
     .catch(err => dispatch(authFailure(err.message))) 
 }
@@ -15,14 +15,14 @@ const callApi = (url, user, dispatch) => {
 export const registerUser = (user) => {
     return dispatch => {
         dispatch(loading())
-        callApi('http://localhost:8080/register', user, dispatch)
+        callApi('http://localhost:9999/api/users/register', user, dispatch)
     }
 }
 
 export const loginUser = user => {
     return dispatch => {
         dispatch(loading())
-        callApi('http://localhost:8080/login', user, dispatch)
+        callApi('http://localhost:9999/api/users/login', user, dispatch)
         
     }
 }
