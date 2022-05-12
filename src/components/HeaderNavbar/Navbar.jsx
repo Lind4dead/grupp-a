@@ -10,7 +10,7 @@ const Navbar = () => {
 
 
   return (
-    <nav className='navbar pt-4 mb-5'>
+    <nav className='navbar pt-4'>
         <div className="dropdown navbar-meny">
             <button onClick={() => setShowMenu(true)} className='dropdown-knapp' type="button" data-mdb-toggle="modal" data-mdb-target="#exampleModal">
                 <i className="fa-solid fa-bars"></i>

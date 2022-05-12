@@ -1,0 +1,48 @@
+
+.bubble-row {
+    background-color: #619b8a74;
+    height: 220px;
+    padding-inline: 2rem;
+}
+
+.bubble-div {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 1px solid #A1C181;
+    background-color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bubble-div img {
+    max-height: 110px;
+}
+
+.bubble-row h3 {
+    color: #619b8a;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: .2rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bubble-row h2 {
+    color: white;
+    margin-bottom: 0;
+    margin-top: .5em;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    align-items: center;
+}
+
+.heladiven {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
