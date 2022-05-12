@@ -6,16 +6,7 @@ export const increment = (product) => {
     payload: product
   }
 }
-export const decrement = () => {
-  return {
-    type: actiontypes().shoppingCart.decrement
-  }
-}
-export const removeOne = () => {
-  return {
-    type: actiontypes().shoppingCart.removeOne
-  }
-}
+
 export const clearCart = () => {
   return {
     type: actiontypes().shoppingCart.clearCart
