@@ -23,7 +23,7 @@ const CartItem = ({ product }) => {
             <CartSelect product={product}/>
             <small><small>1st</small> : {product.price}</small>
           </div>
-          <button className='btn btn-danger btn-sm mb-3 py-2'><i class="fa-solid fa-trash-can fs-6"></i></button>
+          <button className='btn btn-danger btn-sm mb-3 py-2'><i className="fa-solid fa-trash-can fs-6"></i></button>
         </div>
           <hr className='vr position-absolute start-50 bottom-0 my-2 horisontal-line'/>
       </div>

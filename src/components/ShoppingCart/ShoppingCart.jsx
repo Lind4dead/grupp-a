@@ -26,7 +26,7 @@ const ShoppingCart = () => {
      
       {
         shoppingCart.map(product => (
-          <CartItem key={product.id} product={product}/>
+          <CartItem key={product._id} product={product}/>
         ))
       }
       <div className='d-flex justify-content-between align-items-center mt-2 mx-auto px-4'>
@@ -77,7 +77,7 @@ export default ShoppingCart
               <small className='h6'>233:-</small>
 
             </div>
-              <button className='btn btn-danger btn-sm mb-2'><i class="fa-solid fa-trash-can fs-5"></i></button>
+              <button className='btn btn-danger btn-sm mb-2'><i className="fa-solid fa-trash-can fs-5"></i></button>
           </div>
             <hr className='vr position-absolute start-50 bottom-0 my-2 horisontal-line'/>
         </div>

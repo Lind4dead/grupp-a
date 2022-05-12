@@ -12,7 +12,7 @@ const shoppingCartReducer = (state = initState, action) => {
     
     case actiontypes().shoppingCart.increment: {
 
-    const itemRef = state.shoppingCart.find(item => item.id === action.payload.id)
+    const itemRef = state.shoppingCart.find(item => item._id === action.payload._id)
 
     let item = {
       ...action.payload,
