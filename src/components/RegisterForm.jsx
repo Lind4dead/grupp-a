@@ -45,7 +45,7 @@ const RegisterForm = ({setLogin}) => {
             <input value={formData.password} onChange={onChange} type="password" id='password' name='password' className='form-control' placeholder='Lösenord:' />
           </div>
           <div className="col-lg-6 col-sm-12 mb-4 ps-lg-2">
-            <input value={formData.repeatPassword} onChange={onChange} type="repeatPassword" id='repeatPassword' name='repeatPassword' className='form-control' placeholder='Upprepa Lösenordet:' />
+            <input value={formData.repeatPassword} onChange={onChange} type="password" id='repeatPassword' name='repeatPassword' className='form-control' placeholder='Upprepa Lösenordet:' />
           </div>
        
           <div>
