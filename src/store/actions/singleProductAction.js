@@ -14,8 +14,6 @@ export const getProductById = (id) => {
       
     }
   }
-
-
 }
 
 const getProductByIdSuccess = (product) => {

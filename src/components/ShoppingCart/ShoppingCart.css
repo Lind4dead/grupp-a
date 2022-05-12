@@ -1,0 +1,26 @@
+.Shopping-cart {
+  min-width: 600px;
+  max-height: 500px;
+  overflow: auto;
+}
+.Shopping-cart .cart-img-container {
+  max-width: 60px;
+  height: 100%;
+  margin: auto;
+}
+.Shopping-cart .cart-img-container img {
+  max-height: 70px;
+  min-width: 70px;
+  object-fit: contain;
+} 
+.horisontal-line {
+  min-height: 80px;
+  margin: auto;
+  color: #233D4D;
+}
+
+.Cart-select select {
+  height: 36px;
+  font-size: .9rem;
+  margin: auto;
+}
