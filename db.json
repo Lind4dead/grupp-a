@@ -110,11 +110,12 @@
       "id": 2
     },
     {
-      "email": "mail@mail.se",
-      "password": "$2a$10$jDngBMsGcc7HD93t7idDUON3bBwnbJc1L8vmRMOn1Gq2HJu5zrDxm",
-      "firstName": "Emil",
-      "lastName": "Lind",
-      "repeatPassword": "BytMig123",
+
+      "email": "test@test.se",
+      "password": "$2a$10$76USpJtS9R5Xb.O2HXRlze15OPHhrymySD6FxHAE9wEaNeuAxBUSO",
+      "firstName": "test",
+      "lastName": "test",
+      "repeatPassword": "Test123",
       "id": 3
     }
   ]
