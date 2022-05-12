@@ -89,6 +89,13 @@
     background: linear-gradient(to right, rgba(161, 193, 129, 1), rgba(97, 155, 138, 1));
     }
 
+    .login-link {
+      color: #4f9983 ;
+      font-weight: bold;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
     .sprit-titel {
       font-weight: 600;
       font-size: 30px;
