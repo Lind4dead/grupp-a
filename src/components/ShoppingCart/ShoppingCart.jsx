@@ -12,7 +12,7 @@ const ShoppingCart = () => {
 
   return (
 
-    <div onClick={e => e.stopPropagation()} className='Shopping-cart p-3 d-md-block row position-relative'>
+    <div onClick={e => e.stopPropagation()} className='Shopping-cart p-3 d-none d-md-block row position-relative'>
       <button role='button'className='btn-close end-0 position-absolute me-4'></button>
 
       <div className='text-center'>
