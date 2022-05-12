@@ -108,8 +108,14 @@
       "lastName": "Login",
       "repeatPassword": "Login",
       "id": 2
+    },
+    {
+      "email": "mail@mail.se",
+      "password": "$2a$10$jDngBMsGcc7HD93t7idDUON3bBwnbJc1L8vmRMOn1Gq2HJu5zrDxm",
+      "firstName": "Emil",
+      "lastName": "Lind",
+      "repeatPassword": "BytMig123",
+      "id": 3
     }
-  
-  
   ]
 }
