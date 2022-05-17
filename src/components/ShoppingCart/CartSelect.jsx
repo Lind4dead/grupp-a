@@ -1,71 +1,67 @@
-import React from 'react'
-import { useState } from 'react'
 import './ShoppingCart.css'
+import { useDispatch } from 'react-redux'
+import { useState, useEffect } from 'react'
+import { selectAmount } from '../../store/actions/shoppingCartActions'
 
-const CartSelect = () => {
+const CartSelect = ({ product }) => {
+  
+  const [selected, setSelected] = useState(product.quantity)
+  
+  const dispatch = useDispatch()
+  // const { totalQuantity } = useSelector(state => state.shoppingCart)
 
-  const [selected, setSelected] = useState(null)
+  const options = [
+    { value: 1, label: '1'},
+    { value: 2, label: '2' },
+    { value: 3, label: '3' },
+    { value: 4, label: '4' },
+    { value: 5, label: '5' },
+    { value: 6, label: '6' },
+    { value: 7, label: '7' },
+    { value: 8, label: '8' },
+    { value: 9, label: '9' },
+    { value: 10, label: '10' },
+    { value: 11, label: '11' },
+    { value: 12, label: '12' },
+    { value: 13, label: '13' },
+    { value: 14, label: '14' },
+    { value: 15, label: '15' },
+    { value: 16, label: '16' },
+    { value: 17, label: '17' },
+    { value: 18, label: '18' },
+    { value: 19, label: '19' },
+    { value: 20, label: '20' },
+  ]
 
   const handleChange = e => {
-   setSelected([e.target.value])
+    setSelected(e.target.value)
   }
+
+  useEffect(() => {
+    if(selected === product.quantity) {
+      return
+    } else {
+      dispatch(selectAmount(product._id, selected))
+    }
+  }, [selected, dispatch, product._id, product.quantity])
 
   return (
     <div className='Cart-select'>
-      <select onChange={handleChange} defaultValue={selected} className="form-select mb-2">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
-        <option value="8">8</option>
-        <option value="9">9</option>
-        <option value="10">10</option>
-        <option value="11">11</option>
-        <option value="12">12</option>
-        <option value="13">13</option>
-        <option value="14">14</option>
-        <option value="15">15</option>
-        <option value="16">16</option>
-        <option value="17">17</option>
-        <option value="18">18</option>
-        <option value="19">19</option>
-        <option value="20">20</option>
-        <option value="21">21</option>
-        <option value="22">22</option>
-        <option value="23">23</option>
-        <option value="24">24</option>
-        <option value="25">25</option>
-        <option value="26">26</option>
-        <option value="27">27</option>
-        <option value="28">28</option>
-        <option value="29">29</option>
-        <option value="30">30</option>
-        <option value="31">31</option>
-        <option value="32">32</option>
-        <option value="33">33</option>
-        <option value="34">34</option>
-        <option value="35">35</option>
-        <option value="36">36</option>
-        <option value="37">37</option>
-        <option value="38">38</option>
-        <option value="39">39</option>
-        <option value="40">40</option>
-        <option value="41">41</option>
-        <option value="42">42</option>
-        <option value="43">43</option>
-        <option value="44">44</option>
-        <option value="45">45</option>
-        <option value="46">46</option>
-        <option value="47">47</option>
-        <option value="48">48</option>
-        <option value="49">49</option>
-        <option value="50">50</option>
+      <select 
+        onChange={handleChange}
+        value={selected}
+        className="form-select mb-2">
+        { options.map(option => (
+          <option key={option.value}>{option.label}</option> 
+          ))}
       </select>
+      <small>{product.quantity}st<small></small> : {product.quantity * product.price}:- </small>
     </div>
+    
   )
 }
 
 export default CartSelect
+
+
+

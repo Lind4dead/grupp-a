@@ -3,17 +3,18 @@ import './ShoppingCart.css'
 import { customBtn, customBorder, customText } from '../../views/ProductDetails'
 import CartItem from './CartItem'
 import { useDispatch, useSelector } from 'react-redux'
+import { clearCart } from '../../store/actions/shoppingCartActions'
 
 
 const ShoppingCart = () => {
 
   const dispatch = useDispatch()
-  const { shoppingCart, totalAmount } = useSelector(state => state.shoppingCart)
+  const { shoppingCart, totalPrice } = useSelector(state => state.shoppingCart)
 
   return (
 
     <div onClick={e => e.stopPropagation()} className='Shopping-cart p-3 d-none d-md-block row position-relative'>
-      <button role='button'className='btn-close end-0 position-absolute me-4'></button>
+      <button className='btn-close end-0 position-absolute me-4'></button>
 
       <div className='text-center'>
         <span className='h5'>Din varukorg</span>
@@ -29,13 +30,19 @@ const ShoppingCart = () => {
           <CartItem key={product._id} product={product}/>
         ))
       }
-      <div className='d-flex justify-content-between align-items-center mt-2 mx-auto px-4'>
-          <button className='btn-sm btn btn-danger align-self-center'>Töm kundvagn</button>
-        <div>
-          <p className='fw-normal h6'>Totalsumma: 2343:-</p>
+      { shoppingCart.length >= 1 && (
+         <div className='d-flex justify-content-between align-items-center mt-2 mx-auto px-4'>
+          <button
+            onClick={() => dispatch(clearCart())} 
+            className='btn-sm btn btn-danger align-self-center'>Töm kundvagn
+          </button>
+        <div> 
+          <p className='fw-normal h6'>Totalsumma: {totalPrice}:-</p>
           <button style={customBtn} className='btn-md text-center btn btn-dark'>Gå till kassan</button>
         </div>
       </div>
+      )}
+     
 
     </div>
     
