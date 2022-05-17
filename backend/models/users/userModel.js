@@ -193,3 +193,39 @@ exports.getAllUsers = (req, res) => {
     res.status(200).json(result)
   })
 }
+
+
+exports.getUserById = (req, res) => {
+  User.exists({ _id: req.params.id }, (err, result) => {
+    if(err) {
+      return res.status(400).json({
+        statusCode: 400,
+        status: false,
+        message: 'You made a bad request'
+      })
+    }
+    if(!result) {
+      return res.status(404).json({
+        statusCode: 404,
+        status: false,
+        message: 'User does not exist'
+      })
+    }
+
+    User.findOne({ _id: req.params.id }, (err, result) => {
+      if(err) {
+        return res.status(500).json({
+          statusCode: 500,
+          status: false,
+          message: 'Internal server error'
+        })
+      }
+      res.status(200).json(result)
+    })
+
+  })
+
+
+
+
+}
