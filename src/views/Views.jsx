@@ -12,6 +12,7 @@ import RomView from './Spritsorter/RomView'
 import MinaSidor from '../components/MinaSidor'
 import AdminUserOrdersView from './AdminUserOrdersView'
 import AdminView from './AdminView'
+import UserOrdersView from './UserOrdersView'
 
 
 const Views = () => {
@@ -29,6 +30,7 @@ const Views = () => {
         <Route path='/minasidor' element={ <MinaSidor /> } />
         <Route path='/admin' element={ <AdminView /> } />
         <Route path='/administrera' element={ <AdminUserOrdersView /> } />
+        <Route path='/minaodrar' element={ <UserOrdersView /> } />
       </Routes>
     )
 } 

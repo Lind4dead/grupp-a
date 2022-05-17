@@ -7,6 +7,7 @@ export const getOrders = () => {
         try {
             const res = await axios.get('http://localhost:9999/api/orders')
             dispatch(getAllOrders(res.data))
+            dispatch(getOneOrder(res.data))
         } catch (err) {
             dispatch(loadingOrdersFailure(err.message))
         }
@@ -16,6 +17,13 @@ export const getOrders = () => {
 const getAllOrders = (orders) => {
     return {
         type: actiontypes().orders.getAllOrders,
+        payload: orders
+    }
+}
+
+const getOneOrder = (orders) => {
+    return {
+        type: actiontypes().orders.getOneOrder,
         payload: orders
     }
 }
