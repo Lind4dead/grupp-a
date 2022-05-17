@@ -20,6 +20,17 @@ const actiontypes = () => {
       authFailure: 'AUTH_FAILURE',
       authSuccess: 'AUTH_SUCCESS',
       logout: 'LOGOUT_USER'
+    },
+    admin: {
+      getAllUsers: 'GET_ALL_USERS',
+      loadingUsers: 'LOADING_USERS',
+      loadingUsersFailure: 'ADMIN_FAILURE'
+    },
+    orders: {
+      getAllOrders: 'GET_ALL_ORDERS',
+      getOneOrder: 'GET_ONE_ORDER',
+      loadingOrders: 'LOADING_ORDERS',
+      loadingOrdersFailure: 'LOADING_ORDERS_FAILURE'
     }
 
   }

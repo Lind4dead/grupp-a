@@ -9,6 +9,9 @@ import VodkaView from './Spritsorter/VodkaView'
 import WhiskyView from './Spritsorter/WhiskyView'
 import LiquorView from './Spritsorter/LiquorView'
 import RomView from './Spritsorter/RomView'
+import MinaSidor from '../components/MinaSidor'
+import AdminUserOrdersView from './AdminUserOrdersView'
+import AdminView from './AdminView'
 
 
 const Views = () => {
@@ -23,7 +26,9 @@ const Views = () => {
         <Route path='/liquor' element={<LiquorView />} />
         <Route path='/rom' element={<RomView />} />
         <Route path='/details/:id' element={<ProductDetails />} />
-
+        <Route path='/minasidor' element={ <MinaSidor /> } />
+        <Route path='/admin' element={ <AdminView /> } />
+        <Route path='/administrera' element={ <AdminUserOrdersView /> } />
       </Routes>
     )
 } 

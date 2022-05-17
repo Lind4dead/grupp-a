@@ -22,7 +22,7 @@ const DropdownMenuModal = ({setShowMenu}) => {
                     <br />
                     <hr />
                     <br />
-                    <li className='menylänk mt-2'>Mina sidor</li>
+                    <NavLink to='/minasidor'><li className='menylänk mt-2'>Mina sidor</li></NavLink>
                     <li className='menylänk mt-2'>Kundservice</li>
                 </ul>
 
