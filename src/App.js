@@ -4,7 +4,6 @@ import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { getProducts } from './store/actions/productsAction';
 import './App.css';
-
 import Views from './views/Views';
 import Header from './components//HeaderNavbar/Header';
 import Navbar from './components//HeaderNavbar/Navbar';

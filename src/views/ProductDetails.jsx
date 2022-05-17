@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom'
 import { getProductById } from '../store/actions/singleProductAction'
 import { Link } from 'react-router-dom'
-import { increment } from '../store/actions/shoppingCartActions'
+import { addToCart } from '../store/actions/shoppingCartActions'
 
 const ProductDetails = () => {
 
@@ -18,7 +18,7 @@ const ProductDetails = () => {
 
   useEffect(() => {
     dispatch(getProductById(id))
-  }, [])
+  }, [dispatch, id])
 
 
   return ( 
@@ -33,10 +33,11 @@ const ProductDetails = () => {
           <div className="col-md-12 col-xl-11">
             <div className='d-none d-md-block mb-2'>
               <Link to='/allproducts'><small className='h5 fw-light me-md-3 text-dark'>Produkter</small></Link>
+              <i className="fa-solid fa-angle-right me-md-3"></i> 
+              <Link to={`/${product.type}`}><small className='h5 fw-light me-md-3 text-dark'>{product.type}</small></Link>
               <i className="fa-solid fa-angle-right me-md-3"></i>
-              <Link to={`/${product.type}`}><small role='button' className='h5 fw-light me-md-3 text-dark'>{product.type}</small></Link>
-              <i className="fa-solid fa-angle-right me-md-3"></i>
-              <small className='h5 text-decoration-underline'>{product.title}</small>
+              <Link to={''}><small className='text-underline disable-link h5 fw-normal me-md-3 text-dark'>{product.title}</small></Link>
+              
             </div>
             <small className='d-md-none fs-5 mb-1'><i className="fa-solid fa-left-long me-2 fs-4"></i>Tillbaka</small>
             <div className="card shadow-1 rounded-5">
@@ -80,7 +81,7 @@ const ProductDetails = () => {
                     <div className='border-bottom mb-2 '></div>
                     <div className="d-grid col-12 col-md-10 col-lg-8 mx-auto gap-2">
                       <button
-                        onClick={() => dispatch(increment(product))}
+                        onClick={() => dispatch(addToCart(product))}
                         className="btn customBtn rounded-5 btn-lg btn-dark mt-md-3 me-md-0 mt-2"
                         style={customBtn}
                         type="button">Lägg till i kundvagn</button>

@@ -10,9 +10,9 @@ const actiontypes = () => {
       getProductByIdFailure: 'GET_PRODUCT_FAILURE'
     },
     shoppingCart: {
-      increment: 'INCREMENT',
-      decrement: 'DECREMENT',
-      removeOne: 'REMOVE_ONE',
+      addToCart: 'ADD_TO_CART',
+      selectAmount: 'SELECT_AMOUNT',
+      deleteItem: 'DELETE_ITEM',
       clearCart: 'CLEAR_CART'
     },
     auth: {
