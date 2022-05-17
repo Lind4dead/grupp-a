@@ -129,4 +129,7 @@
       object-fit: contain;
     }
     
-
+.adminrubrik {
+  font-weight: bolder;
+  color: #FE7F2D;
+}

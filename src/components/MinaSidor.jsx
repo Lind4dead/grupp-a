@@ -1,8 +1,11 @@
 import React from 'react'
+import AdminView from '../views/AdminView'
 
 const MinaSidor = () => {
   return (
-    <div>MinaSidor</div>
+    <div>
+      <AdminView/>
+    </div>
   )
 }
 

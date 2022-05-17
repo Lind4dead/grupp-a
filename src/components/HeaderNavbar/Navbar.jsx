@@ -28,7 +28,7 @@ const Navbar = () => {
         </div>
         <div className="dropdown shoppingcart-icon">
                 <span
-                className="text-reset me-3 dropdown-toggle hidden-arrow"
+                className="text-reset me-1 dropdown-toggle hidden-arrow"
                 id="navbarDropdownMenuLink"
                 role="button"
                 data-mdb-toggle="dropdown"
