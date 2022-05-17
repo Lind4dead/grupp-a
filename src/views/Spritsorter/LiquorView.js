@@ -7,7 +7,7 @@ const LiquorView = () => {
 
     const { data: products, loading } = useSelector(state => state.products)
     const [liqour, setLiqour] = useState(products.filter(product => (
-      product.type === 'likör'
+      product.type === 'liquor'
     )))
 
   return (
