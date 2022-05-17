@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import { getOrders } from '../store/actions/orderActions'
 import userOrderReducer from '../store/reducers/userOrderReducer'
 
 const UserOrdersView = (user) => {
@@ -21,7 +22,7 @@ const UserOrdersView = (user) => {
   <tbody className=''>
     <tr>
       <th scope="row">1</th>
-      <td>{user.order_id}</td>
+      <td></td>
       <td></td>
       <td></td>
       <td><button className='btn'><i className="fa-solid fa-trash-can fs-6"></i></button></td>
