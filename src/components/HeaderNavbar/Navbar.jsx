@@ -1,7 +1,7 @@
 import './NavbarStyles.css'
 import {useState} from 'react'
 import DropdownMenuModal from './DropdownMenuModal'
-import { Link, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import ShoppingCart from '../ShoppingCart/ShoppingCart'
 import { useSelector } from 'react-redux'
 

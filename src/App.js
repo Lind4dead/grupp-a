@@ -4,10 +4,6 @@ import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { getProducts } from './store/actions/productsAction';
 import './App.css';
-
-import ProductDetails from './views/ProductDetails';
-import { Route, Routes } from 'react-router-dom'
-import ProductsGridView from './views/ProductsGridView';
 import Views from './views/Views';
 import Header from './components//HeaderNavbar/Header';
 import Navbar from './components//HeaderNavbar/Navbar';

@@ -1,8 +1,7 @@
-import React, { useEffect } from 'react'
-import { useSelector, useDispatch } from 'react-redux';
-// import FilterProducts from '../components/FilterProducts';
+import React from 'react'
+import { useSelector } from 'react-redux';
 import ProductCard from '../components/ProductCard'
-// import { productsFilterOptions } from '../store/actions/productsAction';
+
 
 
 const ProductsGridView = () => {
@@ -13,7 +12,6 @@ const ProductsGridView = () => {
 
   return (
     <div className='container'>
-      {/* <FilterProducts /> */}
         <div className="row">
           { loading && <p>Loading...</p>}
           {

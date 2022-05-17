@@ -9,16 +9,16 @@ function Footer() {
             <h4>Om GruppA</h4>
             <ul>
               <li>
-                <a href="#">Det här är GruppA</a>
+                <a href="!#">Det här är GruppA</a>
               </li>
               <li>
-                <a href="#">Jobba på GruppA</a>
+                <a href="!#">Jobba på GruppA</a>
               </li>
               <li>
-                <a href="#">Hållbarhet</a>
+                <a href="!#">Hållbarhet</a>
               </li>
               <li>
-                <a href="#">Press</a>
+                <a href="!#">Press</a>
               </li>
             </ul>
           </div>
@@ -26,16 +26,16 @@ function Footer() {
             <h4>Handla på GruppA</h4>
             <ul>
               <li>
-                <a href="#">Hitta din butik</a>
+                <a href="!#">Hitta din butik</a>
               </li>
               <li>
-                <a href="#">Hemleverans</a>
+                <a href="!#">Hemleverans</a>
               </li>
               <li>
-                <a href="#">Betalning</a>
+                <a href="!#">Betalning</a>
               </li>
               <li>
-                <a href="#">Tjänster</a>
+                <a href="!#">Tjänster</a>
               </li>
             </ul>
           </div>
@@ -43,16 +43,16 @@ function Footer() {
             <h4>Hjälp</h4>
             <ul>
               <li>
-                <a href="#">Kundservice</a>
+                <a href="!#">Kundservice</a>
               </li>
               <li>
-                <a href="#">Reklamation</a>
+                <a href="!#">Reklamation</a>
               </li>
               <li>
-                <a href="#">Öppet köp</a>
+                <a href="!#">Öppet köp</a>
               </li>
               <li>
-                <a href="#">Faktablad</a>
+                <a href="!#">Faktablad</a>
               </li>
             </ul>
           </div>
@@ -60,31 +60,31 @@ function Footer() {
             <h4>KundKlubb</h4>
             <ul>
               <li>
-                <a href="#">Bli medlem</a>
+                <a href="!#">Bli medlem</a>
               </li>
               <li>
-                <a href="#">Medlemsvillkor</a>
+                <a href="!#">Medlemsvillkor</a>
               </li>
               <li>
-                <a href="#">Katalog</a>
+                <a href="!#">Katalog</a>
               </li>
               <li>
-                <a href="#">Nyhetsbrev</a>
+                <a href="!#">Nyhetsbrev</a>
               </li>
             </ul>
           </div>
         </div>
         <div className="social-links">
-          <a href="#">
+          <a href="!#">
             <i className="fab fa-facebook-f"></i>
           </a>
-          <a href="#">
+          <a href="!#">
             <i className="fa-brands fa-instagram"></i>
           </a>
-          <a href="#">
+          <a href="!#">
             <i className="fa-brands fa-pinterest"></i>
           </a>
-          <a href="#">
+          <a href="!#">
             <i className="fa-solid fa-envelope"></i>
           </a>
         </div>
