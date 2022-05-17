@@ -10,8 +10,8 @@
   box-shadow: -2px 3px 7px 0px #8888886a;
   border-radius: 0.5rem;
   padding: 24px;
-
   align-items: center;
+  justify-content: space-between;
 }
 
 .wrapper button {
@@ -39,6 +39,8 @@
   display: flex;
   align-items: center;
   gap: 50px;
+  width: 75%;
+  justify-content: space-between;
 }
 
 .wrapper-info p {

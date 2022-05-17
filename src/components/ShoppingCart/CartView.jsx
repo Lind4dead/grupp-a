@@ -1,9 +1,9 @@
 import React from "react";
 import CartViewItem from "./CartViewItem";
 import { useDispatch, useSelector } from "react-redux";
-import "./CartViewItem.css";
+import { NavLink } from "react-router-dom";
 
-// import { clearCart } from "../../store/actions/shoppingCartActions";
+import "./CartViewItem.css";
 
 const CartView = () => {
   const dispatch = useDispatch();
@@ -25,7 +25,7 @@ const CartView = () => {
             <h4>Medlem</h4>
             <p>Glöm inte att logga in för att ta del av förmånliga medlemserbjudanden!</p>
             <p>
-              <a href="#">Logga in</a> eller <a href="#">bli medlem</a>
+              <NavLink to="/login">Logga in</NavLink> eller <NavLink to="/login">bli medlem</NavLink>
             </p>
           </div>
           <div className="kod  box-left">
