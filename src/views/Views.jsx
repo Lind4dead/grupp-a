@@ -13,6 +13,7 @@ import MinaSidor from "../components/MinaSidor";
 import AdminUserOrdersView from "./AdminUserOrdersView";
 import AdminView from "./AdminView";
 import CartView from "../components/ShoppingCart/CartView";
+import UserOrdersView from './UserOrdersView'
 
 const Views = () => {
   return (
@@ -29,10 +30,11 @@ const Views = () => {
       <Route path="/minasidor" element={<MinaSidor />} />
       <Route path="/admin" element={<AdminView />} />
       <Route path="/administrera" element={<AdminUserOrdersView />} />
-
+      <Route path='/minaodrar' element={ <UserOrdersView /> } />
       <Route path="/cart" element={<CartView />} />
     </Routes>
   );
 };
+
 
 export default Views;
