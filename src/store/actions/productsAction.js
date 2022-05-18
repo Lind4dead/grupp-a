@@ -1,8 +1,7 @@
 import axios from 'axios'
 import actiontypes from '../actiontypes'
 
-const capitalizeFirstLetter = ([first, ...rest], locale = navigator.language) =>
-  first.toLocaleUpperCase(locale) + rest.join('')
+
 
 export const getProducts = () => {
   return async dispatch => {
