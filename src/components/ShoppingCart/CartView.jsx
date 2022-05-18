@@ -7,7 +7,7 @@ import "./CartViewItem.css";
 
 const CartView = () => {
   const dispatch = useDispatch();
-  const { shoppingCart, totalPrice } = useSelector((state) => state.shoppingCart);
+  const { shoppingCart, totalPrice, totalQuantity } = useSelector((state) => state.shoppingCart);
 
   return (
     <div className="container mt-5  mb-5">
@@ -36,7 +36,7 @@ const CartView = () => {
           <div className="checkout  box-left">
             <div className="space mb-2">
               <p>Total produkter</p>
-              <p>{shoppingCart.length}</p>
+              <p>{totalQuantity}</p>
             </div>
             <div className="space fw-bold">
               <p>Totalsumma</p>

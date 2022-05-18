@@ -8,9 +8,7 @@ const CartItem = ({ product }) => {
 
   return (
     <div className="one">
-      <button onClick={() => dispatch(deleteItem(product._id))} className="btn btn-danger btn-sm mb-3 py-2">
-        <i className="fa-solid fa-trash-can fs-6"></i>
-      </button>
+      
       <div className="image">
         <img src={product.imgUrl} alt="Limoncello di Capri" />
       </div>
@@ -27,6 +25,9 @@ const CartItem = ({ product }) => {
         <div>
           <CartSelect product={product} />
         </div>
+        <button onClick={() => dispatch(deleteItem(product._id))} className="btn btn-danger btn-sm mb-3 py-2">
+        <i className="fa-solid fa-trash-can fs-6"></i>
+      </button>
       </div>
     </div>
   );
