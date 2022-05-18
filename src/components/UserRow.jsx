@@ -3,7 +3,7 @@
 // import { getUsers } from '../store/actions/adminAction'
 import { NavLink } from 'react-router-dom'
 
-const UserRow = ({user}) => {
+const UserRow = ({user, order}) => {
 
     // const dispath = useDispatch()
 

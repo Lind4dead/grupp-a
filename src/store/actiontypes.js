@@ -27,6 +27,7 @@ const actiontypes = () => {
       loadingUsersFailure: 'ADMIN_FAILURE'
     },
     orders: {
+      addOrder: 'ADD_ORDER',
       getAllOrders: 'GET_ALL_ORDERS',
       getOneOrder: 'GET_ONE_ORDER',
       loadingOrders: 'LOADING_ORDERS',
