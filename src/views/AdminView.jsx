@@ -1,13 +1,14 @@
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { getUsers } from '../store/actions/adminAction'
+// import { getOrders } from '../store/actions/orderActions'
 // import { NavLink } from 'react-router-dom'
 import UserRow from '../components/UserRow'
 
 const AdminView = () => {
 
   const dispatch = useDispatch()
-  const { data, loading } = useSelector(state => state.admin)
+  const { data, loading } = useSelector((state => state.admin))
 
   useEffect(() => {
       dispatch(getUsers())
@@ -15,7 +16,7 @@ const AdminView = () => {
 
 
   return (
-    <div className='mt-4'>
+    <div className='mt-4 mx-2'>
       
       <h2 className='d-flex justify-content-center mt-3 border-bottom mx-5 adminrubrik'>Administrera ordrar</h2>
 
