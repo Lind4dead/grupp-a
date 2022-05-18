@@ -4,10 +4,22 @@ import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 
 import "./CartViewItem.css";
+import { createOrder } from "../../store/actions/orderActions";
 
 const CartView = () => {
   const dispatch = useDispatch();
   const { shoppingCart, totalPrice, totalQuantity } = useSelector((state) => state.shoppingCart);
+  const { token } = useSelector(state => state.auth)
+
+  const handleSub = () => {
+    const payload = {
+      cart: shoppingCart,
+      total: totalPrice,
+      quantity: totalQuantity,
+    }
+
+    dispatch(createOrder(payload, token))
+  }
 
   return (
     <div className="container mt-5  mb-5">
@@ -47,7 +59,7 @@ const CartView = () => {
               <small className="fw-lighter small text-black-50 ">{totalPrice * 0.31}:-</small>
             </div>
 
-            <button>Beställ</button>
+            <button onClick={handleSub}>Beställ</button>
           </div>
         </div>
       </div>
