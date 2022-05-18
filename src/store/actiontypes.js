@@ -31,7 +31,9 @@ const actiontypes = () => {
       getAllOrders: 'GET_ALL_ORDERS',
       getOneOrder: 'GET_ONE_ORDER',
       loadingOrders: 'LOADING_ORDERS',
-      loadingOrdersFailure: 'LOADING_ORDERS_FAILURE'
+      loadingOrdersFailure: 'LOADING_ORDERS_FAILURE',
+      createNewOrderSuccess: 'CREATE_NEW_ORDER_SUCCESS',
+      createNewOrderFailure: 'CREATE_NEW_ORDER_FAILURE'
     }
 
   }
