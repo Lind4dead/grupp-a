@@ -6,7 +6,7 @@ const auth = require('../../authentication/auth')
 router.post('/', auth.verifyToken,  orderModel.createOrder)
 
 // Hitta order
-router.get('/', auth.verifyToken, orderModel.findOrder)
+router.get('/',  orderModel.findOrder)
 
 router.get('/:id', orderModel.getOneOrder)
 

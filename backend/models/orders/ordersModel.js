@@ -31,7 +31,7 @@ exports.createOrder = (req, res) => {
 
 exports.findOrder = (req, res) => {
 
-  Order.find({ user: req.userData.id}, (err, result) => {
+  Order.find({ }, (err, result) => {
     
     if(err) {
       return res.status(500).json({
