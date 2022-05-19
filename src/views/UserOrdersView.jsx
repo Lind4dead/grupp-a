@@ -4,8 +4,6 @@ import { getOrders } from '../store/actions/orderActions'
 import { useEffect, useState } from 'react'
 import jwt_decode from 'jwt-decode'
 import UserOrderCard from '../components/UserOrderCard'
-// import userOrderReducer from '../store/reducers/userOrderReducer'
-
 
 
 const UserOrdersView = () => {
@@ -52,8 +50,6 @@ dispatch(getOrders())
       <th scope="col">order</th>
       <th scope="col">pris</th>
       <th scope="col">antal produkter</th>
-      <th scope="col">Ta bort order</th>
-
     </tr>
   </thead>
   <tbody className=''>
