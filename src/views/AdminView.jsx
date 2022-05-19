@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { getUsers } from '../store/actions/adminAction'
-// import { getOrders } from '../store/actions/orderActions'
+import { getOrders } from '../store/actions/orderActions'
 // import { NavLink } from 'react-router-dom'
 import UserRow from '../components/UserRow'
 
@@ -14,21 +14,23 @@ const AdminView = () => {
       dispatch(getUsers())
   }, [dispatch])
 
+  useEffect(() => {
+    dispatch(getOrders())
+  }, [dispatch])
 
   return (
-    <div className='mt-4 mx-2'>
+    <div className='mt-5 container card py-5 rounded-7 shadow p-3 mb-5 bg-body rounded '>
       
-      <h2 className='d-flex justify-content-center mt-3 border-bottom mx-5 adminrubrik'>Administrera ordrar</h2>
+      <h2 className='d-flex justify-content-center mt-2 mb-4 adminrubrik'>Administrera ordrar</h2>
 
       
-      <table className="table container mx-5">
-        <thead>
+      <table className="table container px-2">
+        <thead className='align-items-center'>
           <tr>
-            <th scope="col">#</th>
             <th scope="col">Namn</th>
             <th scope="col">Mail</th>
-            <th scope="col">Antal ordrar</th>
-            <th scope="col"> </th>
+            <th className='text-center' scope="col">Antal ordrar</th>
+            <th className='text-center' scope="col">Hantera</th>
           </tr>
         </thead>
         <tbody>

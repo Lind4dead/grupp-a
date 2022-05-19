@@ -28,7 +28,7 @@ const Views = () => {
         <Route path='/details/:id' element={<ProductDetails />} />
         <Route path='/minasidor' element={ <MinaSidor /> } />
         <Route path='/admin' element={ <AdminView /> } />
-        <Route path='/administrera' element={ <AdminUserOrdersView /> } />
+        <Route path='/administrera/:id' element={ <AdminUserOrdersView /> } />
       </Routes>
     )
 } 

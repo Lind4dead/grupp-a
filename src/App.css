@@ -133,3 +133,19 @@
   font-weight: bolder;
   color: #FE7F2D;
 }
+
+.pen-btn {
+  background-color: #fccb4652;
+}
+
+.fa-pen {
+  color: #FE7F2D;
+}
+
+.done-done {
+  background-color: #A1C181;
+}
+
+.not-done {
+  box-shadow: none;
+}
