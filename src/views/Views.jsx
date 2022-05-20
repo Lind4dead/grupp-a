@@ -16,6 +16,7 @@ import CartView from "../components/ShoppingCart/CartView";
 import UserOrdersView from './UserOrdersView'
 
 const Views = () => {
+
   return (
     <Routes>
       <Route path="/" element={<HomeView />} />
@@ -29,7 +30,7 @@ const Views = () => {
       <Route path="/details/:id" element={<ProductDetails />} />
       <Route path="/minasidor" element={<MinaSidor />} />
       <Route path="/admin" element={<AdminView />} />
-      <Route path="/administrera" element={<AdminUserOrdersView />} />
+      <Route path="/administrera/:id" element={<AdminUserOrdersView />} />
       <Route path='/minaodrar' element={ <UserOrdersView /> } />
       <Route path="/cart" element={<CartView />} />
     </Routes>

@@ -5,6 +5,7 @@ const auth = require('../../authentication/auth')
 // Skapa order
 router.post('/', auth.verifyToken,  orderModel.createOrder)
 
+
 // Hitta order som admin
 router.get('/admin', auth.verifyToken, orderModel.findOrderAdmin)
 // Hitta användarens ordrar

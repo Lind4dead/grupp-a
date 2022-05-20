@@ -1,6 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux';
 import ProductCard from '../components/ProductCard'
+import BubbleMenu from '../components/DiscoverByCategory.jsx/BubbleMenu'
 
 
 
@@ -11,7 +12,10 @@ const ProductsGridView = () => {
 
 
   return (
+    <>
+      <BubbleMenu />
     <div className='container'>
+      <h3 className='sprit-titel'>Alla produkter</h3>
         <div className="row">
           { loading && <p>Loading...</p>}
           {
@@ -19,6 +23,7 @@ const ProductsGridView = () => {
           }
         </div>
       </div>
+      </>
   )
 }
 
