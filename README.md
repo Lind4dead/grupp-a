@@ -5,6 +5,9 @@ Du har Admin access, vill du kolla användare utan admin access så kan du anvä
 
 Inlogg: emil@mail.se//BytMig123
 
+För att starta Backend så öppna en terminal i backend-mappen och starta servern genom npm run dev (duh!)
+Använder .env för att nå samma port-nummer som är kodat i frontend.
+
 
 
 # För att skapa en ny branch:
