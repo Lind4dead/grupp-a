@@ -6,7 +6,7 @@ import UserOrdersView from '../views/UserOrdersView'
 const MinaSidor = () => {
   return (
     <div>
-      <AdminView/>
+      {/* <AdminView/> */}
       <UserOrdersView />
     </div>
   )

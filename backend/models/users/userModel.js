@@ -36,7 +36,6 @@ exports.userRegistration = (req, res) => {
           passwordHash: hash,
         })
         .then(data => {
-          console.log(data)
           res.status(201).json({
             statusCode: 201,
             status: true,
@@ -67,7 +66,7 @@ exports.userRegistration = (req, res) => {
 
 exports.loginUser = (req, res) => {
 
-  User.findOne({ email: req.body.email }, (err, user) => {
+  User.findOne({ email: req.body.email }, (err, data) => {
 
     if(err) {
       return res.status(400).json({
@@ -77,7 +76,7 @@ exports.loginUser = (req, res) => {
       })
     }
 
-    if(!user) {
+    if(!data) {
       return res.status(401).json({
         statusCode: 401,
         status: false,
@@ -85,7 +84,7 @@ exports.loginUser = (req, res) => {
       })
     }
 
-    bcrypt.compare(req.body.password, user.passwordHash, (err, result) => {
+    bcrypt.compare(req.body.password, data.passwordHash, (err, result) => {
 
       if(err) {
         return res.status(500).json({
@@ -107,8 +106,8 @@ exports.loginUser = (req, res) => {
         statusCode: 200,
         status: true,
         message: 'Authentication was successful',
-        token: auth.generateToken(user),
-        user
+        token: auth.generateToken(data),
+        data
       })
 
       
@@ -229,3 +228,4 @@ exports.getUserById = (req, res) => {
 
 
 }
+

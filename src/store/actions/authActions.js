@@ -6,9 +6,12 @@ const callApi = (url, user, dispatch) => {
     axios.post(url, user)
     .then(res => {
         dispatch(authSuccess(res.data))
-        console.log(res.data.token)
+        console.log(res.data)
     })
-    .catch(err => dispatch(authFailure(err.message))) 
+    .catch(err => {
+        console.log(err)
+        dispatch(authFailure(err.message))
+    }) 
 }
 
 
@@ -36,11 +39,11 @@ export const logoutUser = () => {
 }
 
 export const checkUserExists = () => {
-    return dispatch => {
+    return async dispatch => {
         let token = localStorage.getItem('token')
         if(token) {
             if(jwt_decode(token).exp * 1000 > Date.now()){
-                dispatch(checkUserSuccess(token))
+                dispatch(checkUserSuccess(token, jwt_decode(token).isAdmin))
             } else {
                 localStorage.removeItem('token')
             }
@@ -68,9 +71,9 @@ const authSuccess = user => {
         payload: user
     }
 }
-const checkUserSuccess = token => {
+const checkUserSuccess = (token, admin) => {
     return {
         type: actiontypes().auth.checkUserSuccess,
-        payload: token
+        payload: {token, admin}
     }
 }

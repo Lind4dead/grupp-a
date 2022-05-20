@@ -11,7 +11,7 @@ router.get('/', productModel.getAllProducts)
 router.get('/:id', productModel.getOneProduct)
 
 // Uppdatera produkt
-router.patch('/:id', auth.verifyToken, productModel.updateProduct)
+router.patch('/:id', productModel.updateProduct)
 
 // Deleta produkt
 router.delete('/:id', auth.verifyToken, productModel.deleteProduct)

@@ -36,6 +36,13 @@ const orderReducer = (state = initState, action) => {
                 error: action.payload
             }
         
+        case actiontypes().orders.updateOrderSuccess:
+            const orderRef = state.data.filter(order => order._id === action.payload._id)
+            orderRef[0].delivered = action.payload.delivered
+            return {
+               ...state,
+            }
+        
         default:
             return state
     }

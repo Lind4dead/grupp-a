@@ -35,11 +35,14 @@ const shoppingCartReducer = (state = initState, action) => {
     case actiontypes().shoppingCart.addToCart: {
       const itemRef = state.shoppingCart.find(item => item._id === action.payload._id)
 
+      
     let item = {
       ...action.payload,
       quantity: 1
     } 
 
+   
+    
     itemRef 
     ? itemRef.quantity += 1 
     : state.shoppingCart = [...state.shoppingCart, item]
@@ -49,7 +52,7 @@ const shoppingCartReducer = (state = initState, action) => {
       totalPrice: calcTotalPrice(state.shoppingCart),
       totalQuantity: getTotalQuantity(state.shoppingCart)
     } 
-    }
+  }
 
 
     case actiontypes().shoppingCart.selectAmount: {

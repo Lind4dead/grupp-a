@@ -1,0 +1,693 @@
+[{
+  "_id": {
+    "$oid": "627cc01ea4d11def254288b9"
+  },
+  "title": "Baileys",
+  "subTitle": "Strawberries and Cream",
+  "price": 249,
+  "imgUrl": "https://sb-product-media-prod.azureedge.net/productimages/24447454/24447454_400.png",
+  "produced": "Irland",
+  "container": "Flaska 700 ml",
+  "alcPercentage": "17%",
+  "desc": "Gräddig, mycket söt smak med inslag av jordgubbar, vit choklad och vanilj. Serveras kyld som avec, eller med is",
+  "prisL": "355,71 kr/l",
+  "type": "liquor",
+  "createdAt": {
+    "$date": "2022-05-12T08:06:54.442Z"
+  },
+  "updatedAt": {
+    "$date": "2022-05-12T08:06:54.442Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "627cc0ba870b07316f2f58f2"
+  },
+  "title": "Flor de Caña",
+  "subTitle": "30 Years V Generaciones, 1988",
+  "price": 18999,
+  "imgUrl": "https://product-cdn.systembolaget.se/productimages/25245170/25245170_400.png",
+  "produced": "Nicaragua",
+  "container": "Flaska 700 ml",
+  "alcPercentage": "45%",
+  "desc": "Kryddig smak med fatkaraktär, inslag av torkade fikon, vaniljfudge, apelsin, muscovadosocker, nötter, arrak och kanel. Serveras rumstempererad som avec.",
+  "prisL": "27141,43 kr/l",
+  "type": "rom",
+  "createdAt": {
+    "$date": "2022-05-12T08:09:30.608Z"
+  },
+  "updatedAt": {
+    "$date": "2022-05-12T08:09:30.608Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "627cc0c6870b07316f2f58f5"
+  },
+  "title": "Bowmore 1965",
+  "subTitle": "52 Years, 2019",
+  "price": 379000,
+  "imgUrl": "https://product-cdn.systembolaget.se/productimages/24604955/24604955_400.png",
+  "produced": "Skottland",
+  "container": "Flaska 700 ml",
+  "alcPercentage": "42%",
+  "desc": "Balanserad, tydligt rökig smak med fatkaraktär, inslag av ljunghonung, torkade aprikoser, jod, pomerans, vaniljfudge och tjära. Serveras rumstempererad.",
+  "prisL": "541428,57 kr/l",
+  "type": "whisky",
+  "createdAt": {
+    "$date": "2022-05-12T08:09:42.718Z"
+  },
+  "updatedAt": {
+    "$date": "2022-05-12T08:09:42.718Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "627cc11c3544f06f86432906"
+  },
+  "title": "Edradour",
+  "subTitle": "10 Years Old",
+  "price": 179,
+  "imgUrl": "https://product-cdn.systembolaget.se/productimages/24658209/24658209_400.png",
+  "produced": "Skottland",
+  "container": "Flaska 200 ml",
+  "alcPercentage": "40%",
+  "desc": "Maltig, nyanserad, kryddig smak med tydlig fatkaraktär, inslag av russin, choklad, vanilj, ljunghonung, torkade aprikoser, apelsin, ceder och halm. Serveras rumstempererad som avec.",
+  "prisL": "895,00 kr/l",
+  "type": "whisky",
+  "createdAt": {
+    "$date": "2022-05-12T08:11:08.509Z"
+  },
+  "updatedAt": {
+    "$date": "2022-05-12T08:11:08.509Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "627cc27b30513faa8e07a5f7"
+  },
+  "title": "The Famous Grouse",
+  "price": 279,
+  "imgUrl": "https://product-cdn.systembolaget.se/productimages/351/351_400.png",
+  "produced": "Skottland",
+  "container": "Flaska 350 ml",
+  "alcPercentage": "40%",
+  "desc": "Maltig smak med inslag av fat, örter, honung och vanilj. Ton av rök. Serveras rumstempererad som avec.",
+  "prisL": "398,57 kr/l",
+  "type": "whisky",
+  "createdAt": {
+    "$date": "2022-05-12T08:16:59.670Z"
+  },
+  "updatedAt": {
+    "$date": "2022-05-12T08:16:59.670Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "627cc374b5de7cbbc3dfb59c"
+  },
+  "title": "Explorer Vodka",
+  "subTitle": "",
+  "price": 203,
+  "imgUrl": "https://product-cdn.systembolaget.se/productimages/1009703/1009703_400.png",
+  "produced": "Internationellt",
+  "container": "PET-flaska 700 ml",
+  "alcPercentage": "37,5%",
+  "desc": "Ren smak med inslag av vete och apelsinskal. Serveras kyld som snaps eller används som drinkingrediens.",
+  "prisL": "290,00 kr/l",
+  "type": "vodka",
+  "createdAt": {
+    "$date": "2022-05-12T08:21:08.367Z"
+  },
+  "updatedAt": {
+    "$date": "2022-05-12T08:21:08.367Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "627cc3bcb5de7cbbc3dfb5a4"
+  },
+  "title": "Limoncello di Capri",
+  "subTitle": " ",
+  "price": 209,
+  "imgUrl": "https://product-cdn.systembolaget.se/productimages/975128/975128_400.png",
+  "produced": "Italien",
+  "container": "Flaska 500 ml",
+  "alcPercentage": "30%",
+  "desc": "Söt, fruktig smak med tydlig karaktär av citron, inslag av citrusskal och örter. Serveras väl kyld, eller används som drinkingrediens.",
+  "prisL": "418,00 kr/l",
+  "type": "liquor",
+  "createdAt": {
+    "$date": "2022-05-12T08:22:20.654Z"
+  },
+  "updatedAt": {
+    "$date": "2022-05-12T08:22:20.654Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "627ccb15ecb076e55851f60a"
+  },
+  "title": "Agitator",
+  "subTitle": "Blended Whisky",
+  "price": 289,
+  "imgUrl": "https://product-cdn.systembolaget.se/productimages/24681059/24681059_400.png",
+  "produced": "Sverige",
+  "container": "Flaska 700 ml",
+  "alcPercentage": "40%",
+  "desc": "Nyanserad, fruktig smak med tydlig fatkaraktär, inslag av gula päron, smörkola, klöverblommor, apelsinskal och vanilj. Serveras rumstempererad som avec.",
+  "prisL": "412,86 kr/l",
+  "type": "whisky",
+  "createdAt": {
+    "$date": "2022-05-12T08:53:41.893Z"
+  },
+  "updatedAt": {
+    "$date": "2022-05-12T08:53:41.893Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "627ccb83ecb076e55851f60c"
+  },
+  "title": "Jura",
+  "subTitle": "12 Years",
+  "price": 239,
+  "imgUrl": "https://product-cdn.systembolaget.se/productimages/503132/503132_400.png",
+  "produced": "Skottland",
+  "container": "Flaska 350 ml",
+  "alcPercentage": "43%",
+  "desc": "Komplex, smakrik, rökig whisky med fatkaraktär, inslag av torkad frukt, nötter, tjärpastill, apelsin, jod och vanilj. Serveras rumstempererad.",
+  "prisL": "682,86 kr/l",
+  "type": "whisky",
+  "createdAt": {
+    "$date": "2022-05-12T08:55:31.816Z"
+  },
+  "updatedAt": {
+    "$date": "2022-05-12T08:55:31.816Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "627ccbb6ecb076e55851f60e"
+  },
+  "title": "Laphroaig",
+  "subTitle": "10 Years",
+  "price": 269,
+  "imgUrl": "https://product-cdn.systembolaget.se/productimages/14951/14951_400.png",
+  "produced": "Skottland",
+  "container": "Flaska 350 ml",
+  "alcPercentage": "40%",
+  "desc": "Nyanserad, påtagligt rökig, aningen blommig smak med fatkaraktär, inslag av ljunghonung, päron, tjära, ostronskal, citrus och vanilj. Serveras rumstempererad.",
+  "prisL": "768,57 kr/l",
+  "type": "whisky",
+  "createdAt": {
+    "$date": "2022-05-12T08:56:22.229Z"
+  },
+  "updatedAt": {
+    "$date": "2022-05-12T08:56:22.229Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "627ccc01ecb076e55851f614"
+  },
+  "title": "Jack Daniel's",
+  "subTitle": "  ",
+  "price": 329,
+  "imgUrl": "https://product-cdn.systembolaget.se/productimages/40608/40608_400.png",
+  "produced": "USA",
+  "container": "Flaska 700 ml",
+  "alcPercentage": "40%",
+  "desc": "Smakrik, kryddig whiskey med karaktär av kolade ekfat, inslag av torkade aprikoser, nötter, smörkola, apelsin och vanilj. Serveras rumstempererad som avec, eller används som drinkingrediens.",
+  "prisL": "470,00 kr/l",
+  "type": "whisky",
+  "createdAt": {
+    "$date": "2022-05-12T08:57:37.152Z"
+  },
+  "updatedAt": {
+    "$date": "2022-05-12T08:57:37.152Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "627ccc39ecb076e55851f616"
+  },
+  "title": "Don Papa",
+  "subTitle": "Rum",
+  "price": 449,
+  "imgUrl": "https://product-cdn.systembolaget.se/productimages/841156/841156_400.png",
+  "produced": "Filippinerna",
+  "container": "Flaska 700 ml",
+  "alcPercentage": "40%",
+  "desc": "Fruktig smak med tydlig fatkaraktär, inslag av arrak, apelsin, choklad, vanilj, nougat och cola. Serveras rumstempererad som avec.",
+  "prisL": "641,43 kr/l",
+  "type": "rom",
+  "createdAt": {
+    "$date": "2022-05-12T08:58:33.946Z"
+  },
+  "updatedAt": {
+    "$date": "2022-05-12T08:58:33.946Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "627ccc7cecb076e55851f618"
+  },
+  "title": "Bacardi",
+  "subTitle": "Carta Blanca",
+  "price": 139,
+  "imgUrl": "https://product-cdn.systembolaget.se/productimages/517/517_400.png",
+  "produced": "Internationellt",
+  "container": "Lättare glasflaska 350 ml",
+  "alcPercentage": "37,5%",
+  "desc": "Robust smak med inslag av arrak och örter. Används som drinkingrediens.",
+  "prisL": "397,14 kr/l",
+  "type": "rom",
+  "createdAt": {
+    "$date": "2022-05-12T08:59:40.549Z"
+  },
+  "updatedAt": {
+    "$date": "2022-05-12T08:59:40.549Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "627cccb2ecb076e55851f61a"
+  },
+  "title": "Havana Club",
+  "subTitle": "Añejo 3 Años",
+  "price": 249,
+  "imgUrl": "https://product-cdn.systembolaget.se/productimages/21955588/21955588_400.png",
+  "produced": "Kuba",
+  "container": "Flaska 700 ml",
+  "alcPercentage": "37,5%",
+  "desc": "Kryddig smak med inslag av torkad ananas, örter, vanilj, päron och arrak. Används som drinkingrediens.",
+  "prisL": "355,71 kr/l",
+  "type": "rom",
+  "createdAt": {
+    "$date": "2022-05-12T09:00:34.539Z"
+  },
+  "updatedAt": {
+    "$date": "2022-05-12T09:00:34.539Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "627cccf8ecb076e55851f61c"
+  },
+  "title": "Plantation",
+  "subTitle": "Experience",
+  "price": 489,
+  "imgUrl": "https://product-cdn.systembolaget.se/productimages/14000133/14000133_400.png",
+  "produced": "Internationellt",
+  "container": "6 fl à 100 ml 600 ml",
+  "alcPercentage": "41%",
+  "desc": "3 Stars, Original Dark, Grande Reserve, Gran Añejo, XO, Special Dry.",
+  "prisL": "815,00 kr/l",
+  "type": "rom",
+  "createdAt": {
+    "$date": "2022-05-12T09:01:44.091Z"
+  },
+  "updatedAt": {
+    "$date": "2022-05-12T09:01:44.091Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "627ccd3fecb076e55851f61e"
+  },
+  "title": "Cointreau",
+  "subTitle": "Likör",
+  "price": 194,
+  "imgUrl": "https://product-cdn.systembolaget.se/productimages/563/563_400.png",
+  "produced": "Frankrike",
+  "container": "Flaska 350ml",
+  "alcPercentage": "40%",
+  "desc": "Söt smak med påtaglig karaktär av apelsin och citrusskal. Serveras kyld som avec, eller som drinkingrediens.",
+  "prisL": "554,29 kr/l",
+  "type": "liquor",
+  "createdAt": {
+    "$date": "2022-05-12T09:02:55.852Z"
+  },
+  "updatedAt": {
+    "$date": "2022-05-12T09:02:55.852Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "627ccd90ecb076e55851f620"
+  },
+  "title": "Malibu",
+  "subTitle": "Nötlikör",
+  "price": 155,
+  "imgUrl": "https://product-cdn.systembolaget.se/productimages/14946/14946_400.png",
+  "produced": "Spanien",
+  "container": "Flaska 500 ml",
+  "alcPercentage": "21%",
+  "desc": "Söt smak med påtaglig karaktär av kokos, inslag av nötter och vanilj. Används som drinkingrediens.",
+  "prisL": "310,00 kr/l",
+  "type": "liquor",
+  "createdAt": {
+    "$date": "2022-05-12T09:04:16.695Z"
+  },
+  "updatedAt": {
+    "$date": "2022-05-12T09:04:16.695Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "627ccdcbecb076e55851f622"
+  },
+  "title": "Jägermeister",
+  "subTitle": "JÄÄÄÄÄÄGEEEER",
+  "price": 289,
+  "imgUrl": "https://product-cdn.systembolaget.se/productimages/27460/27460_400.png",
+  "produced": "Tyskland",
+  "container": "Flaska 700 ml",
+  "alcPercentage": "35%",
+  "desc": "Kryddig, något bitter, söt smak med inslag av lakritsrot, torkade örter, kanel, ingefära och pomerans. Serveras väl kyld.",
+  "prisL": "412,86 kr/l",
+  "type": "liquor",
+  "createdAt": {
+    "$date": "2022-05-12T09:05:15.664Z"
+  },
+  "updatedAt": {
+    "$date": "2022-05-12T09:05:15.664Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "627cce89ecb076e55851f626"
+  },
+  "title": "Små Sure Cola",
+  "subTitle": "Shot med syrlig smak av cola",
+  "price": 182,
+  "imgUrl": "https://product-cdn.systembolaget.se/productimages/1204336/1204336_400.png",
+  "produced": "Danmark",
+  "container": "Flaska 700 ml",
+  "alcPercentage": "16,4%",
+  "desc": "Kryddig, söt, mycket syrlig smak med tydlig karaktär av cola, inslag av ingefära och pomerans. Serveras kyld.",
+  "prisL": "260,00 kr/l",
+  "type": "liquor",
+  "createdAt": {
+    "$date": "2022-05-12T09:08:25.719Z"
+  },
+  "updatedAt": {
+    "$date": "2022-05-12T09:08:25.719Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "627ccec1ecb076e55851f628"
+  },
+  "title": "Fireball",
+  "subTitle": "Cinnamon & Whisky Liqueur",
+  "price": 199,
+  "imgUrl": "https://product-cdn.systembolaget.se/productimages/590525/590525_400.png",
+  "produced": "Kanada",
+  "container": "Flaska 500 ml",
+  "alcPercentage": "33%",
+  "desc": "Mycket söt, kryddig smak med hetta och tydlig karaktär av kanel, inslag av ingefära och apelsin. Serveras med krossad is.",
+  "prisL": "398,00 kr/l",
+  "type": "liquor",
+  "createdAt": {
+    "$date": "2022-05-12T09:09:21.956Z"
+  },
+  "updatedAt": {
+    "$date": "2022-05-12T09:09:21.956Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "627cceececb076e55851f62a"
+  },
+  "title": "Galliano",
+  "subTitle": "Vanilla",
+  "price": 209,
+  "imgUrl": "https://product-cdn.systembolaget.se/productimages/44898/44898_400.png",
+  "produced": "Italien",
+  "container": "Flaska 500 ml",
+  "alcPercentage": "30%",
+  "desc": "Kryddig, mycket söt, simmig smak med tydlig karaktär av vanilj, inslag av smörkola och anis. Används som drinkingrediens.",
+  "prisL": "418,00 kr/l",
+  "type": "liquor",
+  "createdAt": {
+    "$date": "2022-05-12T09:10:04.086Z"
+  },
+  "updatedAt": {
+    "$date": "2022-05-12T09:10:04.086Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "627ccf26ecb076e55851f62c"
+  },
+  "title": "Fishshot",
+  "subTitle": "Blääääh!",
+  "price": 249,
+  "imgUrl": "https://product-cdn.systembolaget.se/productimages/259064/259064_400.png",
+  "produced": "Internationellt",
+  "container": "Lättare glasflaska 700 ml",
+  "alcPercentage": "30%",
+  "desc": "Söt, bitter smak med inslag av mentol, eukalyptus och lakrits. Serveras rumstempererad eller kyld som digestif.",
+  "prisL": "355,71 kr/l",
+  "type": "liquor",
+  "createdAt": {
+    "$date": "2022-05-12T09:11:02.174Z"
+  },
+  "updatedAt": {
+    "$date": "2022-05-12T09:11:02.174Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "627ccf5becb076e55851f62e"
+  },
+  "title": "Absolut Vodka",
+  "subTitle": "Greyhound!",
+  "price": 242,
+  "imgUrl": "https://product-cdn.systembolaget.se/productimages/164/164_400.png",
+  "produced": "Sverige",
+  "container": "Flaska 700 ml",
+  "alcPercentage": "40%",
+  "desc": "Ren smak med inslag av ljust bröd och citrus. Serveras kyld som snaps eller används som drinkingrediens.",
+  "prisL": "345,71 kr/l",
+  "type": "vodka",
+  "createdAt": {
+    "$date": "2022-05-12T09:11:55.548Z"
+  },
+  "updatedAt": {
+    "$date": "2022-05-12T09:11:55.548Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "627cd06decb076e55851f630"
+  },
+  "title": "Koskenkorva Vodka",
+  "subTitle": "Koskenkööörva",
+  "price": 225,
+  "imgUrl": "https://product-cdn.systembolaget.se/productimages/112/112_400.png",
+  "produced": "Finland",
+  "container": "Flaska 700 ml",
+  "alcPercentage": "37,5%",
+  "desc": "Ren smak med inslag av bröd och liten ton av halm. Serveras kyld som snaps eller används som drinkingrediens.",
+  "prisL": "321,43 kr/l",
+  "type": "vodka",
+  "createdAt": {
+    "$date": "2022-05-12T09:16:29.269Z"
+  },
+  "updatedAt": {
+    "$date": "2022-05-12T09:16:29.269Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "627cd0a0ecb076e55851f632"
+  },
+  "title": "Smirnoff",
+  "subTitle": "Ice, ice, baby",
+  "price": 229,
+  "imgUrl": "https://product-cdn.systembolaget.se/productimages/185/185_400.png",
+  "produced": "Internationellt",
+  "container": "Flaska 700 ml",
+  "alcPercentage": "37,5%",
+  "desc": "Ren smak med inslag av ljust bröd, gräs och citrus. Serveras kyld som snaps eller används som drinkingrediens.",
+  "prisL": "327,14 kr/l",
+  "type": "vodka",
+  "createdAt": {
+    "$date": "2022-05-12T09:17:20.417Z"
+  },
+  "updatedAt": {
+    "$date": "2022-05-12T09:17:20.417Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "627cd0dfecb076e55851f634"
+  },
+  "title": "Brännvin special",
+  "subTitle": "Bättre än HB!",
+  "price": 100,
+  "imgUrl": "https://sb-product-media-prod.azureedge.net/productimages/24488010/24488010_400.png",
+  "produced": "Internationellt",
+  "container": "PET-flaska 350 ml",
+  "alcPercentage": "30%",
+  "desc": "Ren smak med inslag av örter. Serveras kyld som snaps eller används som drinkingrediens.",
+  "prisL": "285,71 kr/l",
+  "type": "vodka",
+  "createdAt": {
+    "$date": "2022-05-12T09:18:23.482Z"
+  },
+  "updatedAt": {
+    "$date": "2022-05-12T09:18:23.482Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "627cd10eecb076e55851f636"
+  },
+  "title": "Spirit of Hven",
+  "subTitle": "Organic Vodka",
+  "price": 199,
+  "imgUrl": "https://product-cdn.systembolaget.se/productimages/380971/380971_400.png",
+  "produced": "Sverige",
+  "container": "Flaska 500 ml",
+  "alcPercentage": "40%",
+  "desc": "Organic Vodka Serveras kyld som snaps eller används som drinkingrediens.",
+  "prisL": "398,00 kr/l",
+  "type": "vodka",
+  "createdAt": {
+    "$date": "2022-05-12T09:19:10.294Z"
+  },
+  "updatedAt": {
+    "$date": "2022-05-12T09:19:10.294Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "627cd13eecb076e55851f638"
+  },
+  "title": "Piratens Vodka",
+  "subTitle": "Yarr!",
+  "price": 229,
+  "imgUrl": "https://product-cdn.systembolaget.se/productimages/24701039/24701039_400.png",
+  "produced": "Sverige",
+  "container": "Flaska 700 ml",
+  "alcPercentage": "37,5%",
+  "desc": "Ren smak med inslag av vetebröd och citrus. Används som drinkingrediens.",
+  "prisL": "327,14 kr/l",
+  "type": "vodka",
+  "createdAt": {
+    "$date": "2022-05-12T09:19:58.401Z"
+  },
+  "updatedAt": {
+    "$date": "2022-05-12T09:19:58.401Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "627ce57fecb076e55851f642"
+  },
+  "title": "Sierra",
+  "subTitle": "Tequila Silver",
+  "price": 219,
+  "imgUrl": "https://product-cdn.systembolaget.se/productimages/34305/34305_400.png",
+  "produced": "Mexiko",
+  "container": "Flaska 500 ml",
+  "alcPercentage": "38%",
+  "desc": "Robust smak med inslag av gräs och citrusskal. Används som drinkingrediens.",
+  "prisL": "438,00 kr/l",
+  "type": "tequila",
+  "createdAt": {
+    "$date": "2022-05-12T10:46:23.912Z"
+  },
+  "updatedAt": {
+    "$date": "2022-05-12T10:46:23.912Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "627ce5b1ecb076e55851f644"
+  },
+  "title": "Los Tres Toños",
+  "subTitle": "Reposado",
+  "price": 449,
+  "imgUrl": "https://product-cdn.systembolaget.se/productimages/397911/397911_400.png",
+  "produced": "Mexiko",
+  "container": "Flaska 700 ml",
+  "alcPercentage": "38%",
+  "desc": "Balanserad, nyanserad smak med fatkaraktär, inslag av gula päron, pomerans, lakrits, halm och vanilj. Serveras rumstempererad som digestif eller avec.",
+  "prisL": "641,43 kr/l",
+  "type": "tequila",
+  "createdAt": {
+    "$date": "2022-05-12T10:47:13.853Z"
+  },
+  "updatedAt": {
+    "$date": "2022-05-12T10:47:13.853Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "627ce5e2ecb076e55851f646"
+  },
+  "title": "1800 Añejo",
+  "subTitle": "Tequila!",
+  "price": 449,
+  "imgUrl": "https://product-cdn.systembolaget.se/productimages/24584144/24584144_400.png",
+  "produced": "Mexiko",
+  "container": "Flaska 700 ml",
+  "alcPercentage": "38%",
+  "desc": "Komplex, kryddig smak med tydlig fatkaraktär, inslag av torkade äpplen, ljus choklad, sandelträ, bergamott, vanilj, dragon, tallkåda och tobak. Serveras rumstepererad som avec.",
+  "prisL": "641,43 kr/l",
+  "type": "tequila",
+  "createdAt": {
+    "$date": "2022-05-12T10:48:02.633Z"
+  },
+  "updatedAt": {
+    "$date": "2022-05-12T10:48:02.633Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "627ce60becb076e55851f648"
+  },
+  "title": "Tier Espadín",
+  "subTitle": "San Juan del Río",
+  "price": 359,
+  "imgUrl": "https://product-cdn.systembolaget.se/productimages/19623107/19623107_400.png",
+  "produced": "Mexiko",
+  "container": "Flaska 500 ml",
+  "alcPercentage": "42%",
+  "desc": "Kryddig smak med inslag av päron, halm, peppar, rök, örter och citrusskal. Används som drinkingrediens eller serveras kyld som digestif.",
+  "prisL": "718,00 kr/l",
+  "type": "tequila",
+  "createdAt": {
+    "$date": "2022-05-12T10:48:43.053Z"
+  },
+  "updatedAt": {
+    "$date": "2022-05-12T10:48:43.053Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "627ce63eecb076e55851f64a"
+  },
+  "title": "Casa Noble Reposado",
+  "subTitle": "Tequila",
+  "price": 649,
+  "imgUrl": "https://product-cdn.systembolaget.se/productimages/24685159/24685159_400.png",
+  "produced": "Mexiko",
+  "container": "Flaska 700 ml",
+  "alcPercentage": "40%",
+  "desc": "Smakar absolut ingenting enligt systembolaget!",
+  "prisL": "927,14 kr/l",
+  "type": "tequila",
+  "createdAt": {
+    "$date": "2022-05-12T10:49:34.588Z"
+  },
+  "updatedAt": {
+    "$date": "2022-05-12T10:49:34.588Z"
+  },
+  "__v": 0
+}]

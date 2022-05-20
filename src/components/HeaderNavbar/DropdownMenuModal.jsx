@@ -1,8 +1,12 @@
 import './DropdownMenuModalStyles.css'
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import { useSelector } from 'react-redux'
 
 const DropdownMenuModal = ({setShowMenu}) => {
+
+  const { isAdmin } = useSelector(state => state.auth)
+
   return (
     <div className='Modal1 show' id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div className='modal-dialog'>
@@ -22,6 +26,9 @@ const DropdownMenuModal = ({setShowMenu}) => {
                     <br />
                     <hr />
                     <br />
+                    {
+                      isAdmin && <NavLink to='/admin'><li className='menylänk mt-2'>Admin</li></NavLink>
+                    }
                     <NavLink to='/minasidor'><li className='menylänk mt-2'>Mina sidor</li></NavLink>
                     <li className='menylänk mt-2'>Kundservice</li>
                 </ul>
