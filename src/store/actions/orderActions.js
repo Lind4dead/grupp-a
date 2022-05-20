@@ -2,11 +2,11 @@ import actiontypes from "../actiontypes";
 import axios from "axios";
 import { clearCart } from "./shoppingCartActions";
 
-export const getOrders = (token, isAdmin) => {
+export const getOrders = (token, myprofile) => {
     return async dispatch => {
         dispatch(loadingOrders(true))
         try {
-            if (isAdmin) {
+            if (!myprofile) {
                 const res = await axios.get('http://localhost:9999/api/orders/admin', {
                     headers: {
                         'Authorization': `Bearer ${token}`
@@ -20,6 +20,7 @@ export const getOrders = (token, isAdmin) => {
                         'Authorization': `Bearer ${token}`
                     }
                 })
+                console.log(res)
                 dispatch(getAllOrders(res.data))
             }
         } catch (err) {
@@ -57,12 +58,7 @@ const getAllOrders = (orders) => {
     }
 }
 
-const getOneOrder = (orders) => {
-    return {
-        type: actiontypes().orders.getOneOrder,
-        payload: orders
-    }
-}
+
 
 const loadingOrders = (payload) => {
     return {

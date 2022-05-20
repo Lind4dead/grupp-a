@@ -35,14 +35,13 @@ const shoppingCartReducer = (state = initState, action) => {
     case actiontypes().shoppingCart.addToCart: {
       const itemRef = state.shoppingCart.find(item => item._id === action.payload._id)
 
-      console.log(action.payload)
+      
     let item = {
       ...action.payload,
       quantity: 1
     } 
 
-    console.log(itemRef)
-    console.log(item)
+   
     
     itemRef 
     ? itemRef.quantity += 1 

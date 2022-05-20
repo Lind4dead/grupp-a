@@ -13,7 +13,7 @@ const UserRow = ({user}) => {
       if(orders) {
         orders.map(order => {
           // console.log(order.user)
-          if(order.user == user._id) {
+          if(order.user === user._id) {
             setMyOrders(state => ([
               ...state,
               order
@@ -21,7 +21,7 @@ const UserRow = ({user}) => {
           }
         })
       }
-    }, [])
+    }, [orders, user._id])
 
   return (
     <>

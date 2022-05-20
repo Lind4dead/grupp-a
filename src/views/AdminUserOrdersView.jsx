@@ -1,11 +1,10 @@
-import { useDispatch, useSelector } from 'react-redux'
+import { useSelector } from 'react-redux'
 import { useState, useEffect } from 'react'
 import { NavLink, useParams } from 'react-router-dom'
 import UserOrderRow from '../components/UserOrderRow'
 
 const AdminUserOrdersView = () => {
 
-  const dispatch = useDispatch()
   const { id } = useParams()
 
   const [myOrders, setMyOrders] = useState([])
@@ -15,8 +14,8 @@ const AdminUserOrdersView = () => {
     setMyOrders([])
     if(orders) {
       orders.map(order => {
-        // console.log(order.user)
-        if(order.user == id) {
+        console.log(order.user)
+        if(order.user === id) {
           setMyOrders(state => ([
             ...state,
             order
@@ -24,7 +23,7 @@ const AdminUserOrdersView = () => {
         }
       })
     }
-  }, [])
+  }, [id, orders])
 
   return (
    <div> 

@@ -34,11 +34,13 @@ const authReducer = (state = initState, action) => {
             }
 
         case actiontypes().auth.checkUserSuccess:
+            
             return {
                 ...state,
                 loading: false,
                 error: null,
-                token: action.payload
+                token: action.payload.token,
+                isAdmin: action.payload.admin
             }
 
         case actiontypes().auth.logout:

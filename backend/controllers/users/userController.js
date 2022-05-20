@@ -21,4 +21,5 @@ router.get('/:id', userModel.getUserById)
 
 
 
+
 module.exports = router;

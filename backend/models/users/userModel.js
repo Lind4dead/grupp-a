@@ -76,7 +76,7 @@ exports.loginUser = (req, res) => {
       })
     }
 
-    if(!user) {
+    if(!data) {
       return res.status(401).json({
         statusCode: 401,
         status: false,
@@ -84,7 +84,7 @@ exports.loginUser = (req, res) => {
       })
     }
 
-    bcrypt.compare(req.body.password, user.passwordHash, (err, result) => {
+    bcrypt.compare(req.body.password, data.passwordHash, (err, result) => {
 
       if(err) {
         return res.status(500).json({
@@ -228,3 +228,4 @@ exports.getUserById = (req, res) => {
 
 
 }
+

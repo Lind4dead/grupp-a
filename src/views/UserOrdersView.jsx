@@ -1,8 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { getOrders } from '../store/actions/orderActions'
-import { useEffect, useState } from 'react'
-import jwt_decode from 'jwt-decode'
+import { useEffect } from 'react'
 import UserOrderCard from '../components/UserOrderCard'
 
 
@@ -11,31 +10,14 @@ const UserOrdersView = () => {
 const dispatch = useDispatch()
 const {token, isAdmin} = useSelector(state => state.auth)
 const {data} = useSelector(state => state.orders )
-const [myOrders, setMyOrders] = useState([])
-const [myId, setMyId] = useState('')
 
 
 
-// useEffect(()=> {
-//   setMyOrders([])
-//   if(token){
-//     setMyId(jwt_decode(token).id)
 
-//     data.map(order => {
-//       if(order.user === myId) {
-//         setMyOrders(state => ([
-//           ...state,
-//           order
-//         ]))
-//       }
-//       console.log(order.user)
-//     })
-//   }
-//   console.log(jwt_decode(token).id)
-// }, [data, myId, token])
+
 useEffect(()=>{
   if(token) {
-    dispatch(getOrders(token, isAdmin))
+    dispatch(getOrders(token, 'minaSidor'))
   }
 }, [dispatch, token, isAdmin])
 

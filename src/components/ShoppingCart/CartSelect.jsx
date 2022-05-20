@@ -8,8 +8,7 @@ const CartSelect = ({ product, cart }) => {
   const [selected, setSelected] = useState(product.quantity)
   
   const dispatch = useDispatch()
-  // const { totalQuantity } = useSelector(state => state.shoppingCart)
-  console.log(cart.current.classList)
+ 
 
   const options = [
     { value: 1, label: '1'},
