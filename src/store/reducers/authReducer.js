@@ -2,6 +2,7 @@ import actiontypes from "../actiontypes";
 
 const initState = {
     token: null,
+    isAdmin: false,
     loading: false,
     error: null
 }
@@ -23,8 +24,17 @@ const authReducer = (state = initState, action) => {
             }
 
         case actiontypes().auth.authSuccess:
-            localStorage.setItem('token', action.payload)
+            localStorage.setItem('token', action.payload.token)
             return{
+                ...state,
+                loading: false,
+                error: null,
+                token: action.payload.token,
+                isAdmin: action.payload.data.isAdmin
+            }
+
+        case actiontypes().auth.checkUserSuccess:
+            return {
                 ...state,
                 loading: false,
                 error: null,

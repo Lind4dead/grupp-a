@@ -3,10 +3,11 @@ const mongoose = require('mongoose');
 
 const orderSchema = mongoose.Schema({
 
-  user:     {type: mongoose.Schema.Types.ObjectId, ref:'user', required: true},
-  cart:     {type: Object, required: true},
-  total:    {type: Number, required: true},
-  quantity: {type: Number, required: true}
+  user:       {type: mongoose.Schema.Types.ObjectId, ref:'user', required: true},
+  cart:       {type: Object, required: true},
+  total:      {type: Number, required: true},
+  quantity:   {type: Number, required: true},
+  delivered:  {type: Boolean, default: false}
 }, { timestamps: true })
 
 

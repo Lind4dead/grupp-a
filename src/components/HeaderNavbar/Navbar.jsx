@@ -1,5 +1,5 @@
 import './NavbarStyles.css'
-import {useState} from 'react'
+import {useRef, useState} from 'react'
 import DropdownMenuModal from './DropdownMenuModal'
 import { NavLink } from 'react-router-dom'
 import ShoppingCart from '../ShoppingCart/ShoppingCart'
@@ -9,6 +9,7 @@ import { useSelector } from 'react-redux'
 const Navbar = () => {
 
     const [showMenu, setShowMenu] = useState(false)
+    const cart = useRef()
     const totalQuantity = useSelector(state => state.shoppingCart.totalQuantity)
 
   return (
@@ -40,9 +41,10 @@ const Navbar = () => {
                 </span>
                 <ul
                 className="dropdown-menu dropdown-menu-end shopping-cart"
+                ref={cart}
                 aria-labelledby="navbarDropdownMenuLink"
                 >
-                    <ShoppingCart />
+                    <ShoppingCart cart={cart} />
                 </ul>
             </div>
         
