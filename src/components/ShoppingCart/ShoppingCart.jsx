@@ -7,7 +7,7 @@ import { clearCart } from "../../store/actions/shoppingCartActions";
 
 import { NavLink } from "react-router-dom";
 
-const ShoppingCart = () => {
+const ShoppingCart = ({ cart }) => {
   const dispatch = useDispatch();
   const { shoppingCart, totalPrice } = useSelector((state) => state.shoppingCart);
 
@@ -23,7 +23,7 @@ const ShoppingCart = () => {
       </div>
 
       {shoppingCart.map((product) => (
-        <CartItem key={product._id} product={product} />
+        <CartItem key={product._id} product={product} cart={cart} />
       ))}
       {shoppingCart.length >= 1 && (
         <div className="d-flex justify-content-between align-items-center mt-2 mx-auto px-4">

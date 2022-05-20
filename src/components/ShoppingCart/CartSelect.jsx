@@ -3,12 +3,13 @@ import { useDispatch } from 'react-redux'
 import { useState, useEffect } from 'react'
 import { selectAmount } from '../../store/actions/shoppingCartActions'
 
-const CartSelect = ({ product }) => {
+const CartSelect = ({ product, cart }) => {
   
   const [selected, setSelected] = useState(product.quantity)
   
   const dispatch = useDispatch()
   // const { totalQuantity } = useSelector(state => state.shoppingCart)
+  console.log(cart.current.classList)
 
   const options = [
     { value: 1, label: '1'},
@@ -38,14 +39,14 @@ const CartSelect = ({ product }) => {
     setSelected(e.target.value)
   }
 
-  useEffect((e) => {
+  useEffect(() => {
+    setSelected(product.quantity)
     if(selected === product.quantity) {
       return
-    } else {
-      console.log(e)
+    } else if (cart.current.classList.contains('show')) {
       dispatch(selectAmount(product._id, selected))
     }
-  }, [selected, dispatch, product._id, product.quantity])
+  }, [selected, dispatch, product._id, product.quantity, cart])
 
   return (
     <div className='Cart-select'>
