@@ -1,5 +1,3 @@
-// import {useState} from 'react'
-// import ImgModal from '../components/Modal/ImgModal'
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom'
@@ -9,7 +7,6 @@ import { addToCart } from '../store/actions/shoppingCartActions'
 
 const ProductDetails = () => {
 
-  // const [showModal, setShowModal] = useState(false)
   const dispatch = useDispatch()
   const { id } = useParams()
 
@@ -93,7 +90,6 @@ const ProductDetails = () => {
       </section> 
     }
 
-      {/* { showModal && <ImgModal setShowModal={setShowModal} />} */}
     </div>
 
 
