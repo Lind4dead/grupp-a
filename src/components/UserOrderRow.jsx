@@ -13,7 +13,7 @@ const UserOrderRow = ({order}) => {
         <td>{order._id}</td>
         <td className='text-center'>{order.quantity}</td>
         <td className='text-center'>{order.total} :-</td>
-        <td className='text-center'><button onClick={ setDoneDone } className={`btn ${done? 'done-done' : 'not-done'}`}><i className="fa-solid fa-check"></i></button></td>
+        <td className='text-center'><button onClick={ setDoneDone } className={`btn ${done? 'done-done' : 'not-done'}`}><i className="fa-solid fa-highlighter"></i></button></td>
     </>
   )
 }
