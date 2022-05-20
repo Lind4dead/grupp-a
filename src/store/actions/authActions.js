@@ -6,9 +6,12 @@ const callApi = (url, user, dispatch) => {
     axios.post(url, user)
     .then(res => {
         dispatch(authSuccess(res.data))
-        console.log(res.data.token)
+        console.log(res.data)
     })
-    .catch(err => dispatch(authFailure(err.message))) 
+    .catch(err => {
+        console.log(err)
+        dispatch(authFailure(err.message))
+    }) 
 }
 
 
