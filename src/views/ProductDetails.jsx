@@ -31,7 +31,7 @@ const ProductDetails = () => {
     { loading && <p>Loading</p> }
 
      { product &&
-      <section className='Product-details m-md-5'>
+      <section className='container Product-details m-md-5'>
         <div className="row justify-content-center mb-3">
           <div className="col-md-12 col-xl-11">
             <div className='d-none d-md-block mb-2'>
@@ -48,12 +48,7 @@ const ProductDetails = () => {
                 <div className="row">
                   <div className="col-10 col-md-5 col-lg-4 col-xl-4 mx-auto mt-md-4 mb-4 p-md-0">
                     <div className="product-image-container">
-                      <img src={product.imgUrl}
-                        className="cursor-pointer product-image"
-                        alt='liquor'
-                        role='button'
-                        type='button'
-                      />
+                      <img src={product.imgUrl} className="product-image" alt='liquor'/>
                     </div>
                   </div>
                   <div className="col-12 col-md-7 col-xl-7 mt-md-3 ms-xl-4 pe-md-3 pe-xl-4 me-lg-4 me-xl-2">
@@ -95,7 +90,8 @@ const ProductDetails = () => {
             </div>
           </div>
         </div>
-      </section> }
+      </section> 
+    }
 
       {/* { showModal && <ImgModal setShowModal={setShowModal} />} */}
     </div>

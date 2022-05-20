@@ -52,7 +52,7 @@ const shoppingCartReducer = (state = initState, action) => {
       totalPrice: calcTotalPrice(state.shoppingCart),
       totalQuantity: getTotalQuantity(state.shoppingCart)
     } 
-    }
+  }
 
 
     case actiontypes().shoppingCart.selectAmount: {
