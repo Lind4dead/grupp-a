@@ -9,33 +9,35 @@ import UserOrderCard from '../components/UserOrderCard'
 const UserOrdersView = () => {
 
 const dispatch = useDispatch()
-const {token} = useSelector(state => state.auth)
+const {token, isAdmin} = useSelector(state => state.auth)
 const {data} = useSelector(state => state.orders )
 const [myOrders, setMyOrders] = useState([])
 const [myId, setMyId] = useState('')
 
 
 
-useEffect(()=> {
-  setMyOrders([])
-  if(token){
-    setMyId(jwt_decode(token).id)
+// useEffect(()=> {
+//   setMyOrders([])
+//   if(token){
+//     setMyId(jwt_decode(token).id)
 
-    data.map(order => {
-      if(order.user === myId) {
-        setMyOrders(state => ([
-          ...state,
-          order
-        ]))
-      }
-      console.log(order.user)
-    })
-  }
-  console.log(jwt_decode(token).id)
-}, [data, myId, token])
+//     data.map(order => {
+//       if(order.user === myId) {
+//         setMyOrders(state => ([
+//           ...state,
+//           order
+//         ]))
+//       }
+//       console.log(order.user)
+//     })
+//   }
+//   console.log(jwt_decode(token).id)
+// }, [data, myId, token])
 useEffect(()=>{
-dispatch(getOrders())
-}, [dispatch])
+  if(token) {
+    dispatch(getOrders(token, isAdmin))
+  }
+}, [dispatch, token, isAdmin])
 
 
 
@@ -54,7 +56,7 @@ dispatch(getOrders())
   </thead>
   <tbody className=''>
     {
-      myOrders.map(order => <UserOrderCard key={order._id} order={order} />)
+      data.map(order => <UserOrderCard key={order._id} order={order} />)
     }
    
     

@@ -29,10 +29,35 @@ exports.createOrder = (req, res) => {
 }
 
 
-exports.findOrder = (req, res) => {
+exports.findOrderAdmin = (req, res) => {
 
   Order.find({ }, (err, result) => {
     
+    if(err) {
+      return res.status(500).json({
+        statusCode: 500,
+        status: false,
+        message: 'Something went wrong when fetching the products',
+        err
+      })
+    }
+
+    if(!result) {
+      return res.status(404).json({
+        statusCode: 404,
+        status: false,
+        message: 'You do not have any orders',
+        err
+      })
+    }
+
+    res.status(200).json(result)
+  })
+  
+}
+exports.findOrder = (req, res) => {
+
+  Order.find({ user: req.userData.id }, (err, result) => {
     if(err) {
       return res.status(500).json({
         statusCode: 500,
