@@ -2,7 +2,7 @@ import CartSelect from './CartSelect'
 import { deleteItem } from '../../store/actions/shoppingCartActions'
 import { useDispatch } from 'react-redux'
 
-const CartItem = ({ product }) => {
+const CartItem = ({ product, cart }) => {
 
   const dispatch = useDispatch()
 
@@ -24,7 +24,7 @@ const CartItem = ({ product }) => {
         </div>
         <div className='d-flex justify-content-around align-items-center w-50'>
           <div className='text-center'>
-            <CartSelect product={product}/>
+            <CartSelect cart={cart} product={product}/>
           </div>
           <button 
           onClick={() => dispatch(deleteItem(product._id))}
