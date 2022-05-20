@@ -11,7 +11,8 @@ const productsSchema = mongoose.Schema({
   alcPercentage:  { type: String, required: true},
   desc:           { type: String, required: true},
   prisL:          { type: String, required: true},
-  type:           { type: String, required: true}
+  type:           { type: String, required: true},
+  quantity:       { type: Number, default: 1    }
 }, {timestamps: true})
 
 

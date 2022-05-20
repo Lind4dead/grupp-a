@@ -34,13 +34,15 @@ const CartSelect = ({ product }) => {
   ]
 
   const handleChange = e => {
+    console.log(e)
     setSelected(e.target.value)
   }
 
-  useEffect(() => {
+  useEffect((e) => {
     if(selected === product.quantity) {
       return
     } else {
+      console.log(e)
       dispatch(selectAmount(product._id, selected))
     }
   }, [selected, dispatch, product._id, product.quantity])
