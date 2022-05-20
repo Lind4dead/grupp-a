@@ -117,4 +117,49 @@ exports.getOneOrder = (req, res) => {
 }
 
 
+exports.updateOrder = (req, res) => {
+
+  Order.exists({ _id: req.params.id }, (err, result) => {
+
+    if (err) {
+      return res.status(400).json({
+        statusCode: 400,
+        status: false,
+        message: 'You made a bad request',
+        err
+      })
+    }
+
+    if (!result) {
+      return res.status(404).json({
+        statusCode: 404,
+        status: false,
+        message: 'That order does not exist',
+      })
+    }
+
+    Order.findOneAndUpdate({ _id: req.params.id }, req.body, { new: true })
+      .then(data => {
+        res.status(200).json({
+          statusCode: 200,
+          status: true,
+          message: 'Order updated successfully',
+          data
+        })
+      })
+      .catch(err => {
+        
+        res.status(500).json({
+          statusCode: 500,
+          status: false,
+          message: 'Failed to update order',
+          err
+        })
+      })
+
+  })
+
+}
+
+
 

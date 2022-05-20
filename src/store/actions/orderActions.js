@@ -51,6 +51,17 @@ export const createOrder = (payload, token) => {
     }
 }
 
+export const updateOrder = (id, _delivered) => {
+    return async dispatch => {
+        try {
+            const res = await axios.patch('http://localhost:9999/api/orders/' + id, { delivered: _delivered  } )
+            dispatch(updateOneOrder(res.data.data))
+        } catch (err) {
+            
+        }
+    }
+}
+
 const getAllOrders = (orders) => {
     return {
         type: actiontypes().orders.getAllOrders,
@@ -84,6 +95,13 @@ const createNewOrderSuccess = (payload) => {
 const createNewOrderFailure = (payload) => {
     return {
         type: actiontypes().orders.createNewOrderFailure,
+        payload
+    }
+}
+
+const updateOneOrder = (payload) => {
+    return {
+        type: actiontypes().orders.updateOrderSuccess,
         payload
     }
 }
