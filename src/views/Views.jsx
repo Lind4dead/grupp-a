@@ -14,6 +14,7 @@ import AdminUserOrdersView from "./AdminUserOrdersView";
 import AdminView from "./AdminView";
 import CartView from "../components/ShoppingCart/CartView";
 import UserOrdersView from './UserOrdersView'
+import { ProtectedRoute, ProtectedRouteAdmin } from '../routes/ProtectedRoute';
 
 const Views = () => {
 
@@ -28,11 +29,32 @@ const Views = () => {
       <Route path="/liquor" element={<LiquorView />} />
       <Route path="/rom" element={<RomView />} />
       <Route path="/details/:id" element={<ProductDetails />} />
-      <Route path="/minasidor" element={<MinaSidor />} />
-      <Route path="/admin" element={<AdminView />} />
-      <Route path="/administrera/:id" element={<AdminUserOrdersView />} />
-      <Route path='/minaodrar' element={ <UserOrdersView /> } />
       <Route path="/cart" element={<CartView />} />
+
+      <Route path="/minasidor" element={
+          <ProtectedRoute>
+            <MinaSidor />
+          </ProtectedRoute>
+      }/>
+
+      <Route path='/minaordrar' element={ 
+        <ProtectedRoute>
+          <UserOrdersView />
+        </ProtectedRoute> 
+      }/>
+
+      <Route path="/admin" element={
+        <ProtectedRouteAdmin>
+          <AdminView/>
+        </ProtectedRouteAdmin>
+      }/>
+
+      <Route path="/administrera/:id" element={
+        <ProtectedRouteAdmin>
+          <AdminUserOrdersView/>
+        </ProtectedRouteAdmin>
+      }/>
+
     </Routes>
   );
 };
