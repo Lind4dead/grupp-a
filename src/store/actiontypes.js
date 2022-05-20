@@ -19,7 +19,8 @@ const actiontypes = () => {
       loading: 'LOADING_USER',
       authFailure: 'AUTH_FAILURE',
       authSuccess: 'AUTH_SUCCESS',
-      logout: 'LOGOUT_USER'
+      logout: 'LOGOUT_USER',
+      checkUserSuccess: 'CHECK_USER_SUCCESS'
     },
     admin: {
       getAllUsers: 'GET_ALL_USERS',
