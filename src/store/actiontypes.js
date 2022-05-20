@@ -34,7 +34,8 @@ const actiontypes = () => {
       loadingOrders: 'LOADING_ORDERS',
       loadingOrdersFailure: 'LOADING_ORDERS_FAILURE',
       createNewOrderSuccess: 'CREATE_NEW_ORDER_SUCCESS',
-      createNewOrderFailure: 'CREATE_NEW_ORDER_FAILURE'
+      createNewOrderFailure: 'CREATE_NEW_ORDER_FAILURE',
+      updateOrderSuccess: 'UPDATE_ORDER_SUCCESS'
     }
 
   }

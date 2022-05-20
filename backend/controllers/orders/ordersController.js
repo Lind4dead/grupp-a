@@ -13,5 +13,7 @@ router.get('/', auth.verifyToken, orderModel.findOrder)
 
 router.get('/:id', orderModel.getOneOrder)
 
+router.patch('/:id', orderModel.updateOrder)
+
 
 module.exports = router;
