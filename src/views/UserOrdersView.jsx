@@ -4,6 +4,7 @@ import { getOrders } from '../store/actions/orderActions'
 import { useEffect, useState } from 'react'
 import jwt_decode from 'jwt-decode'
 import UserOrderCard from '../components/UserOrderCard'
+import UserOldOrders from '../components/UserOldOrders'
 
 
 const UserOrdersView = () => {
@@ -43,15 +44,16 @@ useEffect(()=>{
 
   return (
     <div className='mt-5 container card py-5 rounded-7 shadow p-3 mb-5 bg-body rounded '>
-    <NavLink to='/minaordrar' className='text-start ps-1 ms-5 mb-2 h3' style={customText}>Mina Odrar:</NavLink>
+    <NavLink to='/minaordrar' className='text-start ps-1 ms-5 mb-5 h3' style={customText}>Mina Odrar:</NavLink>
     <div className='ps-5 pe-5 d-flex flex-column'>
     <table className="table" >
   <thead>
-    <tr className="">
+  <p className='ps-1' >Nya ordrar: </p>
+    <tr>
       <th scope="col">#</th>
-      <th scope="col">order</th>
-      <th scope="col">pris</th>
-      <th scope="col">antal produkter</th>
+      <th scope="col">Order</th>
+      <th scope="col">Pris</th>
+      <th scope="col">Antal produkter</th>
     </tr>
   </thead>
   <tbody className=''>
@@ -59,8 +61,15 @@ useEffect(()=>{
       data.map(order => <UserOrderCard key={order._id} order={order} />)
     }
    
-    
+   <p className='ps-1 pt-5' >Historiska ordrar: </p>
+   {
+      data.map(order => <UserOldOrders key={order._id} order={order} />)
+    }
+
   </tbody>
+  
+
+
 </table>
 </div>
     </div>

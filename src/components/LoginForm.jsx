@@ -26,7 +26,7 @@ const LoginForm = ({setLogin}) => {
   }
   
   return (
-    <div className='container card py-5 rounded-7 shadow p-3 mb-5 bg-body rounded'>
+    <div className='container card py-5 rounded-7 shadow p-3 mb-5 mt-5 bg-body rounded'>
       <h2 className='text-center mb-4'>Logga in</h2>
       <form onSubmit={handleSubmit} className='d-flex justify-content-center'>
         <div className=" col-10">
