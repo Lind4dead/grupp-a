@@ -36,7 +36,6 @@ exports.userRegistration = (req, res) => {
           passwordHash: hash,
         })
         .then(data => {
-          console.log(data)
           res.status(201).json({
             statusCode: 201,
             status: true,
@@ -67,7 +66,7 @@ exports.userRegistration = (req, res) => {
 
 exports.loginUser = (req, res) => {
 
-  User.findOne({ email: req.body.email }, (err, user) => {
+  User.findOne({ email: req.body.email }, (err, data) => {
 
     if(err) {
       return res.status(400).json({
@@ -107,8 +106,8 @@ exports.loginUser = (req, res) => {
         statusCode: 200,
         status: true,
         message: 'Authentication was successful',
-        token: auth.generateToken(user),
-        user
+        token: auth.generateToken(data),
+        data
       })
 
       

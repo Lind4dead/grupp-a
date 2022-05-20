@@ -24,14 +24,13 @@ const authReducer = (state = initState, action) => {
             }
 
         case actiontypes().auth.authSuccess:
-            console.log(action.payload.user)
             localStorage.setItem('token', action.payload.token)
             return{
                 ...state,
                 loading: false,
                 error: null,
                 token: action.payload.token,
-                isAdmin: action.payload.user.isAdmin
+                isAdmin: action.payload.data.isAdmin
             }
 
         case actiontypes().auth.checkUserSuccess:
