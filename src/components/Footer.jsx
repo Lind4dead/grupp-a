@@ -1,18 +1,22 @@
 import React from "react";
 import "./footer.css";
+import { NavLink } from "react-router-dom";
+
 function Footer() {
   return (
     <footer className="footer">
       <div className="footer-container">
         <div className="row">
           <div className="footer-col">
-            <h4>Om GruppA</h4>
+            <div className="footer-title">
+              <h4>Om Romio</h4>
+            </div>
             <ul>
               <li>
-                <a href="!#">Det här är GruppA</a>
+                <a href="!#">Det här är Romio</a>
               </li>
               <li>
-                <a href="!#">Jobba på GruppA</a>
+                <a href="!#">Jobba på Romio</a>
               </li>
               <li>
                 <a href="!#">Hållbarhet</a>
@@ -23,41 +27,31 @@ function Footer() {
             </ul>
           </div>
           <div className="footer-col">
-            <h4>Handla på GruppA</h4>
+            <div className="footer-title">
+              <h4>Handla på Romio</h4>
+            </div>
+
             <ul>
               <li>
-                <a href="!#">Hitta din butik</a>
+                <NavLink to="/allproducts">Alla produkter</NavLink>
               </li>
               <li>
-                <a href="!#">Hemleverans</a>
+                <NavLink to="/rom">Rom</NavLink>
               </li>
               <li>
-                <a href="!#">Betalning</a>
+                <NavLink to="/whisky">Whisky</NavLink>
               </li>
               <li>
-                <a href="!#">Tjänster</a>
+                <NavLink to="/tequila">Tequila</NavLink>
               </li>
             </ul>
           </div>
+
           <div className="footer-col">
-            <h4>Hjälp</h4>
-            <ul>
-              <li>
-                <a href="!#">Kundservice</a>
-              </li>
-              <li>
-                <a href="!#">Reklamation</a>
-              </li>
-              <li>
-                <a href="!#">Öppet köp</a>
-              </li>
-              <li>
-                <a href="!#">Faktablad</a>
-              </li>
-            </ul>
-          </div>
-          <div className="footer-col">
-            <h4>KundKlubb</h4>
+            <div className="footer-title">
+              <h4>KundKlubb</h4>
+            </div>
+
             <ul>
               <li>
                 <a href="!#">Bli medlem</a>

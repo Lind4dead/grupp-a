@@ -2,6 +2,7 @@ import React from "react";
 import CartViewItem from "./CartViewItem";
 import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
+import { customBtn } from "../../views/ProductDetails";
 
 import "./CartViewItem.css";
 import { createOrder } from "../../store/actions/orderActions";
@@ -9,17 +10,17 @@ import { createOrder } from "../../store/actions/orderActions";
 const CartView = () => {
   const dispatch = useDispatch();
   const { shoppingCart, totalPrice, totalQuantity } = useSelector((state) => state.shoppingCart);
-  const { token } = useSelector(state => state.auth)
+  const { token } = useSelector((state) => state.auth);
 
   const handleSub = () => {
     const payload = {
       cart: shoppingCart,
       total: totalPrice,
       quantity: totalQuantity,
-    }
+    };
 
-    dispatch(createOrder(payload, token))
-  }
+    dispatch(createOrder(payload, token));
+  };
 
   return (
     <div className="container mt-5  mb-5">
@@ -27,12 +28,22 @@ const CartView = () => {
       <br />
       <div className="wrapper">
         <div className="wrapper-left">
+          {!shoppingCart.length && (
+            <div className="tom">
+              <h2 className="tom-text">
+                Du har inga produkter <br /> i varukorgen
+              </h2>
+              <NavLink to="/">
+                <button>Gå till starsidan</button>
+              </NavLink>
+            </div>
+          )}
           {shoppingCart.map((product) => (
             <CartViewItem key={product._id} product={product} />
           ))}
         </div>
 
-        <div className="two">
+        <div className="wrapper-right">
           <div className="member  box-left">
             <h4>Medlem</h4>
             <p>Glöm inte att logga in för att ta del av förmånliga medlemserbjudanden!</p>
