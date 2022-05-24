@@ -110,7 +110,7 @@
       margin-left: 1rem;
       color: #232d4de2;
     }
-    .TillAllaProdukter .fa-left-long {
+      .TillAllaProdukter .fa-left-long {
       font-size: medium;
       color: #fe812d85;
     }
@@ -118,7 +118,6 @@
       color: #fe812dcb;
       font-weight: lighter;
     }
-  
 .adminrubrik {
   font-weight: bolder;
   color: #FE7F2D;
