@@ -1,6 +1,6 @@
 .footer {
   background-color: #233d4d;
-  padding: 70px 0;
+  padding: 65px 0;
 }
 
 .footer-container {
@@ -11,6 +11,7 @@
 .row {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .footer-col {
@@ -23,6 +24,10 @@
   color: #fff;
   margin-bottom: 30px;
   text-transform: capitalize;
+}
+
+.footer-title {
+  height: 75px;
 }
 
 footer ul {
@@ -49,9 +54,17 @@ footer ul {
 .social-links {
   display: flex;
   justify-content: flex-end;
+  gap: 10px;
+  margin-top: 15px;
 }
 
 .social-links a {
   color: #fff;
   margin: 0 10px 10px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .row {
+    justify-content: space-between;
+  }
 }
