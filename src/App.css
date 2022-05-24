@@ -60,12 +60,14 @@
 }
 
 .Modal .modal-dialog {
-  position: relative;
+  position: absolute;
   width: 40%;
   height: 100vh;
   margin: 0 !important;
   pointer-events: none;
+  
 }
+
 
 .Modal .modal-content {
   position: relative;

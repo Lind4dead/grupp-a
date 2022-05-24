@@ -7,12 +7,20 @@ const DropdownMenuModal = ({setShowMenu}) => {
 
   const { isAdmin } = useSelector(state => state.auth)
 
+
+  const onClose = (e) => {
+    e.stopPropagation()
+    if(e.target.id === "exampleModalbg") {
+      setShowMenu(false)
+    }
+  }
+
   return (
-    <div className='Modal1 show' id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div className='Modal1 show' onClick={onClose} id="exampleModalbg">
     <div className='modal-dialog'>
       <div className="modal-content">
         <div className="modal-header">
-          <button onClick={() => setShowMenu(false)} type="button" className="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+          <button onClick={() => setShowMenu(false)} type="button" className="btn-close"></button>
         </div>
         <div className="modal-body">
                     <h5 className='meny-h5'>Spritdrycker</h5>
