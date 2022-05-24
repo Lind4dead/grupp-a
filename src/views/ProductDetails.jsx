@@ -2,9 +2,9 @@ import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom'
 import { getProductById } from '../store/actions/singleProductAction'
-import DetailsImage from '../components/ProductDetails/DetailsImage'
-import DetailsContent from '../components/ProductDetails/DetailsContent'
-import DetailsNavigation from '../components/ProductDetails/DetailsNavigation'
+import DetailsImage from '../components/productdetails/DetailsImage'
+import DetailsContent from '../components/productdetails/DetailsContent'
+import DetailsNavigation from '../components/productdetails/DetailsNavigation'
 
 const ProductDetails = () => {
 
