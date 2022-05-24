@@ -146,8 +146,8 @@
 
 .bildrad1 {
   margin-top: 3rem;
-  max-height: 400px;
-  display: flex;
+  height: 100%;
+  /* display: flex; */
   align-items: stretch;
   justify-content: center;
 }
@@ -158,7 +158,7 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 5rem;
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 .bild-box {
@@ -189,4 +189,12 @@
   font-size: 15px;
   font-weight: 400;
   font-family:'Times New Roman', Times, serif;
+}
+.card img {
+  object-fit: cover;
+  height: 100%;
+}
+.bildrad1 .card,
+.bildrad2 .card {
+  max-height: 600px;
 }
