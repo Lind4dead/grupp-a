@@ -118,17 +118,7 @@
       color: #fe812dcb;
       font-weight: lighter;
     }
-    .Product-details .product-image-container {
-      width: 100%;
-      height: 100%;
-      text-align: center;
-    }
-    .Product-details .product-image-container img {
-      max-width: 160px;
-      max-height: 300px;
-      object-fit: contain;
-    }
-    
+  
 .adminrubrik {
   font-weight: bolder;
   color: #FE7F2D;
