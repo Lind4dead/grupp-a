@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux'
 
 const DropdownMenuModal = ({setShowMenu}) => {
 
-  const { isAdmin } = useSelector(state => state.auth)
+  const { isAdmin, token } = useSelector(state => state.auth)
 
 
   const onClose = (e) => {
@@ -37,7 +37,10 @@ const DropdownMenuModal = ({setShowMenu}) => {
                     {
                       isAdmin && <NavLink to='/admin'><li className='menylänk mt-2'>Admin</li></NavLink>
                     }
-                    <NavLink to='/minasidor'><li className='menylänk mt-2'>Mina sidor</li></NavLink>
+                    {
+                      token ? <NavLink to='/minasidor'><li className='menylänk mt-2'>Mina sidor</li></NavLink> : <NavLink to='/login'><li className='menylänk mt-2'>Logga in</li></NavLink>
+                    }
+                    
                     <li className='menylänk mt-2'>Kundservice</li>
                 </ul>
 
