@@ -1,3 +1,15 @@
+# TILL JOAKIM:
+Inlogg: joakim@mail.com//BytMig123
+
+Du har Admin access, vill du kolla användare utan admin access så kan du använda:
+
+Inlogg: emil@mail.se//BytMig123
+
+För att starta Backend så öppna en terminal i backend-mappen och starta servern genom npm run dev (duh!)
+Använder .env för att nå samma port-nummer som är kodat i frontend.
+
+
+
 # För att skapa en ny branch:
 Se till att du är i master branch ->
 "git checkout master" i terminalen ->

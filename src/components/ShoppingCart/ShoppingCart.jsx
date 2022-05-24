@@ -4,7 +4,6 @@ import { customBtn } from "../../views/ProductDetails";
 import CartItem from "./CartItem";
 import { useDispatch, useSelector } from "react-redux";
 import { clearCart } from "../../store/actions/shoppingCartActions";
-
 import { NavLink } from "react-router-dom";
 
 const ShoppingCart = ({ cart }) => {
