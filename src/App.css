@@ -110,7 +110,7 @@
       margin-left: 1rem;
       color: #232d4de2;
     }
-    .TillAllaProdukter .fa-left-long {
+      .TillAllaProdukter .fa-left-long {
       font-size: medium;
       color: #fe812d85;
     }
@@ -118,7 +118,7 @@
       color: #fe812dcb;
       font-weight: lighter;
     }
-    .Product-details .product-image-container {
+      .Product-details .product-image-container {
       width: 100%;
       height: 100%;
       text-align: center;

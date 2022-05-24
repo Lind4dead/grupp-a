@@ -50,15 +50,16 @@ const UserOrdersView = () => {
   return (
     <div className='mt-5 container card py-5 rounded-7 shadow p-3 mb-5 bg-body rounded '>
 
-      <NavLink to='/minaordrar' className='text-start ps-1 ms-5 mb-2 h3' style={customText}>Mina Ordrar:</NavLink>
+      <NavLink to='/minaordrar' className='adminrubrik text-center mb-4 h3'>Mina Ordrar:</NavLink>
 
-      <div className='ps-5 pe-5 d-flex flex-column'>
-            <p className='ps-1 mt-3' >Aktiva ordrar: </p>
+      <div className='ps-5 pe-5 d-flex flex-column '>
+            <p className='ps-5 mt-3  text-start' >Aktiva ordrar: </p>
+            <div className="d-flex ">
         <table className="table" >
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Ordrar</th>
+          <thead className=''>
+            <tr className='text-center'>
+              <th className='text-center'scope="col">#</th>
+              <th  scope="col">Ordernummer</th>
               <th scope="col">Pris</th>
               <th scope="col">Antal produkter</th>
             </tr>
@@ -71,17 +72,22 @@ const UserOrdersView = () => {
             
           </tbody>
           </table>
-            <p className='ps-1 mt-3' >Levererade ordrar: </p>
-        <table className="table" >
-          <thead>
+          </div>
+
+            <p className='ps-5 mt-5' >Levererade ordrar: </p>
+        <table className=" table" >
+          
+          <thead className='align-items-center'>
             <tr>
-              <th scope="col">#</th>
-              <th scope="col">Ordrar</th>
-              <th scope="col">Pris</th>
-              <th scope="col">Antal produkter</th>
+              <th className='text-center' scope="col">#</th>
+              <th className='text-center'scope="col">Ordernummer</th>
+              <th className='text-center' scope="col">Pris</th>
+              <th className='text-center' scope="col">Antal produkter</th>
             </tr>
           </thead>
-          <tbody className=''>
+          
+
+          <tbody className=' '>
             {
               historyOrders.map(order => <UserOrderCard key={order._id} order={order} />)
             }
@@ -89,7 +95,7 @@ const UserOrdersView = () => {
             
 
           </tbody>
-
+          
 
 
         </table>
@@ -102,6 +108,3 @@ const UserOrdersView = () => {
 
 export default UserOrdersView
 
-export const customText = {
-  color: '#233D4D'
-}
