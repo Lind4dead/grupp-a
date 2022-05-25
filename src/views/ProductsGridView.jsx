@@ -20,7 +20,7 @@ const ProductsGridView = () => {
         <div className="row">
           { loading && <p>Loading...</p>}
           {
-           filteredProducts.length ? filteredProducts.map(product => <div key={product._id} className='col-6 col-md-4 col-xl-3'><ProductCard  product={product} /></div>) : products.map(product => <div key={product._id} className='col-6 col-md-4 col-xl-3'><ProductCard  product={product} /></div>)
+           !filteredProducts ? products.map(product => <div key={product._id} className='col-6 col-md-4 col-xl-3'><ProductCard  product={product} /></div>) : filteredProducts.map(product => <div key={product._id} className='col-6 col-md-4 col-xl-3'><ProductCard  product={product} /></div>)
           }
         </div>
       </div>

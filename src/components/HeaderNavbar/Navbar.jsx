@@ -1,7 +1,7 @@
 import './NavbarStyles.css'
 import {useEffect, useRef, useState} from 'react'
 import DropdownMenuModal from './DropdownMenuModal'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 import ShoppingCart from '../ShoppingCart/ShoppingCart'
 import { useSelector, useDispatch } from 'react-redux'
 import { filterProducts } from '../../store/actions/productsAction'
@@ -10,15 +10,23 @@ import { filterProducts } from '../../store/actions/productsAction'
 const Navbar = () => {
 
     const dispatch = useDispatch()
+    const navigate = useNavigate()
     const [showMenu, setShowMenu] = useState(false)
     const [searchData, setSearchData] = useState('')
     const cart = useRef()
     const totalQuantity = useSelector(state => state.shoppingCart.totalQuantity)
     const { data: products } = useSelector(state => state.products)
 
+    const handleSub = (e) => {
+        e.preventDefault()
+        navigate('/allproducts')
+    }
+
     useEffect(() => {
-        const filteredProducts = products.filter(product => product.title.match(searchData))
-        dispatch(filterProducts(filteredProducts))
+        if(products) {
+            const filteredProducts = products.filter(product => product.title.match(searchData))
+            dispatch(filterProducts(filteredProducts))
+        }
     }, [searchData, dispatch, products])
 
   return (
@@ -33,10 +41,10 @@ const Navbar = () => {
                 
             <NavLink to='/'><h1 className='logga'><i className="fa-solid fa-martini-glass"></i> ROMIO</h1></NavLink>
         </div>
-        <div className="form-outline sökruta col-12 col-sm-6 col-md-7 col-lg-8">
+        <form onSubmit={handleSub} className="form-outline sökruta col-12 col-sm-6 col-md-7 col-lg-8">
             <div className='magnifying-glass'><i className="fa-solid fa-magnifying-glass"></i></div>
             <input type="search" id="form1" className="form-control" value={searchData} onChange={e => setSearchData(e.target.value)} placeholder="Sök efter produkt..." aria-label="Search"/>
-        </div>
+        </form>
         <div className="dropdown shoppingcart-icon">
                 <span
                 className="text-reset me-1 dropdown-toggle hidden-arrow"
