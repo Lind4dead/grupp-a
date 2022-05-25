@@ -2,7 +2,8 @@ const actiontypes = () => {
   return {
     products: {
       setProducts: 'SET_PRODUCTS',
-      loadingProducts: 'LOADING_PRODUCTS'
+      loadingProducts: 'LOADING_PRODUCTS',
+      filterProducts: 'FILTER_PRODUCTS'
     },
     singleProduct: {
       getProductById: 'GET_PRODUCT_BY_ID',

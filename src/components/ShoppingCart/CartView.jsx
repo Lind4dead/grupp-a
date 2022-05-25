@@ -2,7 +2,6 @@ import React from "react";
 import CartViewItem from "./CartViewItem";
 import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
-import { customBtn } from "../../views/ProductDetails";
 
 import "./CartViewItem.css";
 import { createOrder } from "../../store/actions/orderActions";

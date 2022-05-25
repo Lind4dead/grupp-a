@@ -2,8 +2,7 @@ import actiontypes from "../actiontypes";
 
 const initState = {
   data: [],
-  filteredData: [],
-  filterOptions: null,
+  filteredProducts: [],
   loading: false,
   error: null
 }
@@ -22,6 +21,12 @@ const productsReducer = (state = initState, action) => {
       return {
         ...state,
         loading: action.payload
+      }
+
+    case actiontypes().products.filterProducts:
+      return {
+        ...state,
+        filteredProducts: action.payload
       }
 
 

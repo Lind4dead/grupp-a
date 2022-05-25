@@ -8,7 +8,8 @@ import BubbleMenu from '../components/DiscoverByCategory.jsx/BubbleMenu'
 const ProductsGridView = () => {
 
   
-  const { data: products, loading } = useSelector(state => state.products)
+  const { data: products, filteredProducts, loading } = useSelector(state => state.products)
+  // const [filteredProducts, setFilteredProducts] = useState([])
 
 
   return (
@@ -19,7 +20,7 @@ const ProductsGridView = () => {
         <div className="row">
           { loading && <p>Loading...</p>}
           {
-            products.map(product => <div key={product._id} className='col-6 col-md-4 col-xl-3'><ProductCard  product={product} /></div>)
+           filteredProducts.length ? filteredProducts.map(product => <div key={product._id} className='col-6 col-md-4 col-xl-3'><ProductCard  product={product} /></div>) : products.map(product => <div key={product._id} className='col-6 col-md-4 col-xl-3'><ProductCard  product={product} /></div>)
           }
         </div>
       </div>

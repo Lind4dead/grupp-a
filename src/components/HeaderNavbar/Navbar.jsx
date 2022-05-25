@@ -1,16 +1,25 @@
 import './NavbarStyles.css'
-import {useRef, useState} from 'react'
+import {useEffect, useRef, useState} from 'react'
 import DropdownMenuModal from './DropdownMenuModal'
 import { NavLink } from 'react-router-dom'
 import ShoppingCart from '../ShoppingCart/ShoppingCart'
-import { useSelector } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
+import { filterProducts } from '../../store/actions/productsAction'
 
 
 const Navbar = () => {
 
+    const dispatch = useDispatch()
     const [showMenu, setShowMenu] = useState(false)
+    const [searchData, setSearchData] = useState('')
     const cart = useRef()
     const totalQuantity = useSelector(state => state.shoppingCart.totalQuantity)
+    const { data: products } = useSelector(state => state.products)
+
+    useEffect(() => {
+        const filteredProducts = products.filter(product => product.title.match(searchData))
+        dispatch(filterProducts(filteredProducts))
+    }, [searchData, dispatch, products])
 
   return (
     <nav className='navbar pt-4'>
@@ -26,7 +35,7 @@ const Navbar = () => {
         </div>
         <div className="form-outline sökruta col-12 col-sm-6 col-md-7 col-lg-8">
             <div className='magnifying-glass'><i className="fa-solid fa-magnifying-glass"></i></div>
-            <input type="search" id="form1" className="form-control" placeholder="Type query" aria-label="Search"/>
+            <input type="search" id="form1" className="form-control" value={searchData} onChange={e => setSearchData(e.target.value)} placeholder="Sök efter produkt..." aria-label="Search"/>
         </div>
         <div className="dropdown shoppingcart-icon">
                 <span

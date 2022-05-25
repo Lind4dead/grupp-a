@@ -11,7 +11,7 @@ const ProductDetails = () => {
   const dispatch = useDispatch()
   const { id } = useParams()
 
-  const { data: product, loading, error } = useSelector(state => state.singleProduct)
+  const { data: product, loading } = useSelector(state => state.singleProduct)
 
   
   useEffect(() => {

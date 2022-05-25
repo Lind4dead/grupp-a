@@ -17,25 +17,12 @@ export const getProducts = () => {
   }
 }
 
-// export const productsFilterOptions = (products) => {
-//   return dispatch => {
-
-//     const types = []
-//     const countries = []
-//     products.forEach(product => {
-
-//       if (!types.find(type => type === capitalizeFirstLetter(product.type))) {
-
-//         types.push(capitalizeFirstLetter(product.type))
-//       }
-//       if (!countries.find(country => country === product.produced)) {
-//         countries.push(capitalizeFirstLetter(product.produced))
-//       }
-//     });
-//     const payload = { types, countries }
-//     dispatch(setFilterOptions(payload))
-//   }
-// }
+export const filterProducts = (products) => {
+  return {
+    type: actiontypes().products.filterProducts,
+    payload: products
+  }
+}
 
 const setProducts = (products) => {
   return {

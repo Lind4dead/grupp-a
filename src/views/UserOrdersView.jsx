@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from 'react-redux'
 import { getOrders } from '../store/actions/orderActions'
 import { useEffect, useState } from 'react'
 import UserOrderCard from '../components/UserOrderCard'
-import UserOldOrders from '../components/UserOldOrders'
 
 
 const UserOrdersView = () => {
